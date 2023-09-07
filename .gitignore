@@ -40,3 +40,5 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
+
+/Electronics/production
