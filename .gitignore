@@ -41,4 +41,5 @@ fp-info-cache
 # Exported BOM files
 *.xml
 
-/Electronics/SmallDSPMainBoard/production
+#Uncleaned fabrication files
+**/production

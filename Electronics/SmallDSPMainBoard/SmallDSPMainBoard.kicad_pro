@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -484,9 +484,7 @@
       "/S_SDA{slash}MISO": "rgb(255, 0, 255)",
       "Net-(C40-Pad1)": "rgb(0, 255, 0)",
       "Net-(C41-Pad1)": "rgb(0, 255, 0)",
-      "Net-(C50-Pad2)": "rgb(0, 255, 0)",
-      "Net-(C51-Pad2)": "rgb(0, 255, 0)",
-      "Net-(C52-Pad2)": "rgb(0, 255, 0)",
+      "Net-(C43-Pad1)": "rgb(0, 255, 0)",
       "Net-(U1A-PLLFlt)": "rgb(255, 0, 255)",
       "Net-(U1A-Xtal_In{slash}MCLK_In)": "rgb(255, 0, 255)",
       "Net-(U1A-Xtal_Out)": "rgb(255, 0, 255)",
