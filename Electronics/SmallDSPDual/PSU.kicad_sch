@@ -1556,9 +1556,6 @@
     (property "Assembling" "X" (at 218.44 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 218.44 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 218.44 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1571,10 +1568,13 @@
     (property "Rated Current" "500mA" (at 218.44 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 218.44 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid baebf5b2-3727-4828-9033-c3e63189cb00))
     (pin "2" (uuid 9d20cca5-f8fc-464b-9dc9-52d4668acbf1))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -1602,7 +1602,7 @@
     )
     (pin "1" (uuid 9c28ec42-41d7-49a6-acb8-a52350ebe463))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -1628,9 +1628,12 @@
     (property "Datasheet" "~" (at 195.58 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 190.5 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 447fc214-622f-4a65-b4cf-d67c38cc145b))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "TP7") (unit 1)
         )
@@ -1656,9 +1659,6 @@
     (property "Assembling" "X" (at 100.33 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C75510" (at 100.33 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UTC(Unisonic Tech) " (at 100.33 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1668,11 +1668,14 @@
     (property "Rated Current" "" (at 100.33 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C75510" (at 100.33 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 37bda2c8-6dbb-4b0b-9217-ff7a82b9ab6d))
     (pin "2" (uuid ccf95a91-a5d9-4191-8796-90a84a992472))
     (pin "3" (uuid 12932653-7f29-46f0-872e-b57975c69817))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "U13") (unit 1)
         )
@@ -1697,7 +1700,7 @@
     )
     (pin "1" (uuid 56e3a292-70fe-439d-b279-11e61ea3976d))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -1725,7 +1728,7 @@
     )
     (pin "1" (uuid 6eb61ece-61c0-42c9-bd20-73792170f660))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -1753,7 +1756,7 @@
     )
     (pin "1" (uuid 5b269594-3768-4794-aa90-59829e535c61))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -1781,7 +1784,7 @@
     )
     (pin "1" (uuid 7c0e7b68-0bab-40f5-ab78-918937c35651))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#FLG?") (unit 1)
         )
@@ -1809,7 +1812,7 @@
     )
     (pin "1" (uuid f9b6d79c-6bdb-4c63-9d7b-46cea8ecbda5))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#FLG?") (unit 1)
         )
@@ -1847,9 +1850,6 @@
     (property "Assembling" "X" (at 157.48 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C28323" (at 157.48 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Samsung Electro-Mechanics" (at 157.48 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1865,10 +1865,13 @@
     (property "Tolerance" "10%" (at 157.48 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C28323" (at 157.48 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 3062b38c-e854-461f-8fbc-2cb6735497c8))
     (pin "2" (uuid 58596382-f9d2-4f97-a737-7e4f586488f7))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "C?") (unit 1)
         )
@@ -1896,7 +1899,7 @@
     )
     (pin "1" (uuid f046cd36-14ef-4ed7-b306-a8aa57ec8718))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#FLG?") (unit 1)
         )
@@ -1931,11 +1934,14 @@
     (property "Rated Current" "" (at 144.78 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 144.78 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 90147a32-8493-4db0-912c-c14badeb8525))
     (pin "2" (uuid 5510c9c9-d3f3-4409-9560-63fb4f3b92c0))
     (pin "3" (uuid b774e089-7d8c-4914-b2a3-a0874f288d45))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "J16") (unit 1)
         )
@@ -1960,7 +1966,7 @@
     )
     (pin "1" (uuid 4ac97745-a2e2-497b-8764-7e5bde7419ba))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "#PWR0167") (unit 1)
         )
@@ -1995,9 +2001,6 @@
     (property "Assembling" "X" (at 190.5 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C22975" (at 190.5 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 190.5 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2013,10 +2016,13 @@
     (property "Tolerance" "1%" (at 190.5 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C22975" (at 190.5 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 286f7f59-2cd1-4d8d-ba2a-5ebfec22e203))
     (pin "2" (uuid b4e9d41d-8f15-4e20-af21-bf2642d05fe8))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "R?") (unit 1)
         )
@@ -2044,7 +2050,7 @@
     )
     (pin "1" (uuid bf5d5fe8-4204-4f6d-bc1a-be89d7ce1e42))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2082,9 +2088,6 @@
     (property "Assembling" "X" (at 255.27 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C72041" (at 255.27 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 255.27 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2097,10 +2100,13 @@
     (property "Rated Current" "" (at 255.27 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C72041" (at 255.27 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f38d6e56-8c40-4c2d-8ed1-0a84cb5be0d8))
     (pin "2" (uuid 35f0ec95-6259-467d-9b43-2550fa163dd9))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "D?") (unit 1)
         )
@@ -2128,7 +2134,7 @@
     )
     (pin "1" (uuid a2b08654-f858-44d8-a120-0a85d411e351))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#FLG?") (unit 1)
         )
@@ -2166,19 +2172,19 @@
     (property "Assembling" "X" (at 203.2 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C22975" (at 203.2 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Current" "" (at 203.2 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Tolerance" "1%" (at 203.2 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C22975" (at 203.2 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 4cb59318-2873-4507-89f6-0c837fca29de))
     (pin "2" (uuid b9f2be9b-0da1-461b-bf80-ac62b71e031a))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "R84") (unit 1)
         )
@@ -2203,7 +2209,7 @@
     )
     (pin "1" (uuid de990d06-25e5-419c-9448-5589c1d413b7))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2241,9 +2247,6 @@
     (property "Assembling" "X" (at 190.5 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C72041" (at 190.5 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 190.5 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2256,10 +2259,13 @@
     (property "Rated Current" "" (at 190.5 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C72041" (at 190.5 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8ebd8bd7-b5ea-4c46-b7ba-26bb49d55b3f))
     (pin "2" (uuid d1f898a5-5264-4f57-aa33-e7ce084e2e4e))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "D?") (unit 1)
         )
@@ -2297,9 +2303,6 @@
     (property "Assembling" "X" (at 80.01 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 80.01 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 80.01 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2312,10 +2315,13 @@
     (property "Rated Current" "500mA" (at 80.01 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 80.01 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 46d1d264-8179-467e-b650-ce14206ebb67))
     (pin "2" (uuid 6fab4080-9b8e-491a-a842-8fe2aaa7665b))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -2343,7 +2349,7 @@
     )
     (pin "1" (uuid 8f67e6f1-518c-4f30-8aa4-888256e3a257))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2371,7 +2377,7 @@
     )
     (pin "1" (uuid 1663c3cd-ad75-4f25-b1d3-593c23fcfe5e))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2409,9 +2415,6 @@
     (property "Assembling" "X" (at 128.27 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C72041" (at 128.27 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 128.27 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2424,10 +2427,13 @@
     (property "Rated Current" "" (at 128.27 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C72041" (at 128.27 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 2f47359b-6589-477e-9c2c-3c5a75980e54))
     (pin "2" (uuid a8931714-cfd7-4385-9a0e-a802bccef4ef))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "D?") (unit 1)
         )
@@ -2456,9 +2462,6 @@
     (property "Assembling" "X" (at 252.73 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C20526" (at 252.73 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Jiangsu Changjing Electronics Technology Co., Ltd." (at 252.73 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2468,11 +2471,14 @@
     (property "Rated Current" "" (at 252.73 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C20526" (at 252.73 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ea653d81-2065-4307-8998-5082f19178d2))
     (pin "2" (uuid 5cff40f1-90f3-4c83-a870-4d002b0f2092))
     (pin "3" (uuid 92a86a75-f1f6-439f-bb7d-0edda52ce071))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "Q?") (unit 1)
         )
@@ -2500,7 +2506,7 @@
     )
     (pin "1" (uuid b5bf24e8-7afd-49bf-8d46-75737e53bbf9))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2528,7 +2534,7 @@
     )
     (pin "1" (uuid 3a229cc8-b703-4773-9885-f5a72133bab4))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2566,9 +2572,6 @@
     (property "Assembling" "X" (at 173.99 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 173.99 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 173.99 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2581,10 +2584,13 @@
     (property "Rated Current" "500mA" (at 173.99 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 173.99 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 517a5fe7-4fd1-4c85-be56-64fb22348470))
     (pin "2" (uuid 5e3af79f-197c-4bef-a9c3-a09445e35436))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -2612,7 +2618,7 @@
     )
     (pin "1" (uuid 07e3f17b-acb1-4de0-af8e-0a769b6b4978))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2650,9 +2656,6 @@
     (property "Assembling" "X" (at 80.01 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 80.01 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 80.01 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2665,10 +2668,13 @@
     (property "Rated Current" "500mA" (at 80.01 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 80.01 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 5cbafed4-c8b9-4c88-9ac9-8532e8af6a5d))
     (pin "2" (uuid 630b393f-abbd-4c27-8f9d-49f124e18cf1))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -2696,7 +2702,7 @@
     )
     (pin "1" (uuid 01fdc4b5-0529-4805-b0cf-2bc47cf43ac1))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2724,7 +2730,7 @@
     )
     (pin "1" (uuid 63708989-8ca1-4dab-99b2-2f08198aaf76))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2762,9 +2768,6 @@
     (property "Assembling" "X" (at 173.99 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 173.99 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 173.99 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2777,10 +2780,13 @@
     (property "Rated Current" "500mA" (at 173.99 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 173.99 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 4b2523f2-dae4-4553-a0bb-60a70eff28c3))
     (pin "2" (uuid 557d06f4-408d-43f0-adac-333a6aa7b9ad))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -2818,9 +2824,6 @@
     (property "Assembling" "X" (at 128.27 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C22843" (at 128.27 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 128.27 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2836,10 +2839,13 @@
     (property "Tolerance" "1%" (at 128.27 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C22843" (at 128.27 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 7009569b-eb69-450a-8515-340f73af8018))
     (pin "2" (uuid 8c8841da-2730-40cd-b990-2a0080ecc5d7))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "R?") (unit 1)
         )
@@ -2867,7 +2873,7 @@
     )
     (pin "1" (uuid 589f8155-f8bc-41b4-866a-2a69762a56ee))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -2896,9 +2902,6 @@
     (property "Assembling" "X" (at 151.13 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C22980" (at 151.13 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 151.13 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2914,10 +2917,13 @@
     (property "Tolerance" "1%" (at 151.13 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C22980" (at 151.13 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d18a0ace-f64e-4d86-841c-a68028de0751))
     (pin "2" (uuid 4605e6d0-4915-4d85-b4a2-fb0675c2cbe6))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "R80") (unit 1)
         )
@@ -2952,9 +2958,6 @@
     (property "Assembling" "X" (at 80.01 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 80.01 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 80.01 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2967,10 +2970,13 @@
     (property "Rated Current" "500mA" (at 80.01 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 80.01 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8b6f8e8a-e4c6-4805-9d68-4c7f605a18a9))
     (pin "2" (uuid 33f25c65-fa6b-4e93-80fb-136c98333d6a))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -3008,9 +3014,6 @@
     (property "Assembling" "X" (at 72.39 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C28323" (at 72.39 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Samsung Electro-Mechanics" (at 72.39 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3026,10 +3029,13 @@
     (property "Tolerance" "10%" (at 72.39 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C28323" (at 72.39 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 23d1c43f-2304-418c-9600-578925a50346))
     (pin "2" (uuid 003bc24f-7a4a-4378-a68a-25d9cddce1dc))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "C?") (unit 1)
         )
@@ -3057,7 +3063,7 @@
     )
     (pin "1" (uuid f3453bbf-582d-4976-89a5-d75472b1d438))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -3086,9 +3092,6 @@
     (property "Assembling" "X" (at 193.04 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C75510" (at 193.04 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UTC(Unisonic Tech) " (at 193.04 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3098,11 +3101,14 @@
     (property "Rated Current" "" (at 193.04 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C75510" (at 193.04 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 63500275-4312-4b0c-b2e2-aaed2c3aafac))
     (pin "2" (uuid d87ba3fb-0bcf-49fc-8dc8-7e4e64a57579))
     (pin "3" (uuid ac89b8f8-a0e8-4151-867a-4413535f7a82))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "U15") (unit 1)
         )
@@ -3127,7 +3133,7 @@
     )
     (pin "1" (uuid c284f4eb-0fa8-4f4f-af14-69eb76347904))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -3165,19 +3171,19 @@
     (property "Assembling" "X" (at 110.49 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C25862" (at 110.49 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Current" "" (at 110.49 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Tolerance" "1%" (at 110.49 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C25862" (at 110.49 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 0c30cab7-86ad-41a9-9c53-ef4521d564c0))
     (pin "2" (uuid 7795315f-6c33-426c-be5a-01a3299e7f92))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "R76") (unit 1)
         )
@@ -3212,9 +3218,6 @@
     (property "Assembling" "X" (at 87.63 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C28323" (at 87.63 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Samsung Electro-Mechanics" (at 87.63 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3230,10 +3233,13 @@
     (property "Tolerance" "10%" (at 87.63 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C28323" (at 87.63 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 0130eb18-4bfb-4344-b238-5d6ce9ad2e2a))
     (pin "2" (uuid 05213743-37b9-4161-90d1-96ef9a221a2b))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "C?") (unit 1)
         )
@@ -3271,9 +3277,6 @@
     (property "Assembling" "X" (at 234.95 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C72041" (at 234.95 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 234.95 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3286,10 +3289,13 @@
     (property "Rated Current" "" (at 234.95 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C72041" (at 234.95 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d9252e72-81e6-4d5b-a2e7-2527c20cf595))
     (pin "2" (uuid 3a30effd-ea4a-416b-aed8-a836202333ee))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "D?") (unit 1)
         )
@@ -3327,9 +3333,6 @@
     (property "Assembling" "X" (at 218.44 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 218.44 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 218.44 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3342,10 +3345,13 @@
     (property "Rated Current" "500mA" (at 218.44 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 218.44 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d2825691-4828-4ab2-b211-88379fa8481d))
     (pin "2" (uuid 1a75491e-b18b-470e-8017-58c630a9f1b7))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -3373,7 +3379,7 @@
     )
     (pin "1" (uuid 30fdf09e-8f4d-4177-a9ea-b5ed9e83b965))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -3401,7 +3407,7 @@
     )
     (pin "1" (uuid af2fd675-42be-43e4-ac78-38bf6b61d845))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#FLG?") (unit 1)
         )
@@ -3439,9 +3445,6 @@
     (property "Assembling" "X" (at 173.99 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 173.99 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 173.99 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3454,10 +3457,13 @@
     (property "Rated Current" "500mA" (at 173.99 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 173.99 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 912df229-0442-49b7-953f-c09652ed03bb))
     (pin "2" (uuid 9a2ab45c-baed-42bd-8f11-be760269266d))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -3495,9 +3501,6 @@
     (property "Assembling" "X" (at 119.38 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C28323" (at 119.38 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Samsung Electro-Mechanics" (at 119.38 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3513,10 +3516,13 @@
     (property "Tolerance" "10%" (at 119.38 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C28323" (at 119.38 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 1d085016-9eea-498f-838e-46b2f6f115e7))
     (pin "2" (uuid 422fdb51-663b-45f1-bdc4-2a7e60db4db1))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "C?") (unit 1)
         )
@@ -3554,9 +3560,6 @@
     (property "Assembling" "X" (at 181.61 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C28323" (at 181.61 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Samsung Electro-Mechanics" (at 181.61 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3572,10 +3575,13 @@
     (property "Tolerance" "10%" (at 181.61 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C28323" (at 181.61 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid bc87da4a-f7ee-4031-983a-7aad08455ec3))
     (pin "2" (uuid 4759ad5c-1598-40b1-b759-50a914e07bea))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "C?") (unit 1)
         )
@@ -3613,9 +3619,6 @@
     (property "Assembling" "X" (at 226.06 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C28323" (at 226.06 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Samsung Electro-Mechanics" (at 226.06 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3631,10 +3634,13 @@
     (property "Tolerance" "10%" (at 226.06 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C28323" (at 226.06 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 97517ccd-8e5d-4466-a8d7-a535ee1ab99d))
     (pin "2" (uuid f7a6eb89-6e9f-4ca4-9724-70f687dfab41))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "C?") (unit 1)
         )
@@ -3662,7 +3668,7 @@
     )
     (pin "1" (uuid 61e80b3f-0d58-4c33-8f8e-706b74227149))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -3700,19 +3706,19 @@
     (property "Assembling" "X" (at 203.2 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C25862" (at 203.2 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Current" "" (at 203.2 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Tolerance" "1%" (at 203.2 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C25862" (at 203.2 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 3ecb5369-6470-4dc9-b6e4-aa135aec09a2))
     (pin "2" (uuid 6d2c8f01-50c1-4246-a664-3abcc1d28437))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "R83") (unit 1)
         )
@@ -3747,9 +3753,6 @@
     (property "Assembling" "X" (at 210.82 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C28323" (at 210.82 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Samsung Electro-Mechanics" (at 210.82 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3765,10 +3768,13 @@
     (property "Tolerance" "10%" (at 210.82 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C28323" (at 210.82 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b7b976dd-4b2d-44a5-8744-446ea43b310a))
     (pin "2" (uuid 1562ccc7-4921-46ea-8f63-97f9509e3395))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "C?") (unit 1)
         )
@@ -3796,7 +3802,7 @@
     )
     (pin "1" (uuid 6e237e49-f833-4ed1-bc35-a48555065970))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -3825,9 +3831,6 @@
     (property "Assembling" "X" (at 110.49 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C25924" (at 110.49 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 110.49 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3843,10 +3846,13 @@
     (property "Tolerance" "1%" (at 110.49 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C25924" (at 110.49 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ca49a1bb-b95d-4ba3-adb2-db37ce321dd2))
     (pin "2" (uuid 7d6268f6-def9-48a3-9c17-02909e663b1e))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "R77") (unit 1)
         )
@@ -3881,19 +3887,19 @@
     (property "Assembling" "X" (at 151.13 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C25862" (at 151.13 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Current" "" (at 151.13 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Tolerance" "1%" (at 151.13 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C25862" (at 151.13 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f4352fac-c8c0-4b3c-ab57-57ef9d613e1b))
     (pin "2" (uuid c96fb7cc-74a0-4490-a15a-a59c192c65fd))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "R79") (unit 1)
         )
@@ -3918,7 +3924,7 @@
     )
     (pin "1" (uuid 0333a1a1-eee1-4710-a674-a38d1f58da09))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -3956,9 +3962,6 @@
     (property "Assembling" "X" (at 166.37 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C23170" (at 166.37 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 166.37 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3974,10 +3977,13 @@
     (property "Tolerance" "1%" (at 166.37 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C23170" (at 166.37 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid cb84e25c-e1b2-4057-b8b4-dffc26284f36))
     (pin "2" (uuid 30a643d6-22c3-4ffb-81f1-4086882dbab5))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "R?") (unit 1)
         )
@@ -4015,9 +4021,6 @@
     (property "Assembling" "X" (at 218.44 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C1017" (at 218.44 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 218.44 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4030,10 +4033,13 @@
     (property "Rated Current" "500mA" (at 218.44 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C1017" (at 218.44 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 130c30b1-2879-4ea1-9e55-f989ed4bca0e))
     (pin "2" (uuid 55e5a4e2-9e8d-4df1-b83f-4621d1b0345b))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "FB?") (unit 1)
         )
@@ -4062,9 +4068,6 @@
     (property "Assembling" "X" (at 237.49 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C20526" (at 237.49 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "Jiangsu Changjing Electronics Technology Co., Ltd." (at 237.49 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4074,11 +4077,14 @@
     (property "Rated Current" "" (at 237.49 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C20526" (at 237.49 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 027a1894-c7d7-40d7-a5e5-dd11a80f489b))
     (pin "2" (uuid 03facf2e-2ffa-44b1-b944-2ddfec6fa906))
     (pin "3" (uuid 84b78b13-5b07-4b92-8c84-6dec9456d7df))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "Q?") (unit 1)
         )
@@ -4106,7 +4112,7 @@
     )
     (pin "1" (uuid 6d40ce29-5c88-482d-b2ea-48789b485a26))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -4144,9 +4150,6 @@
     (property "Assembling" "X" (at 234.95 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C23350" (at 234.95 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 234.95 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4162,10 +4165,13 @@
     (property "Tolerance" "1%" (at 234.95 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C23350" (at 234.95 59.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 3f6f7938-6bf3-4cf6-bcff-14e735795733))
     (pin "2" (uuid 93067f5a-b521-4347-9ae7-d682acfec6b4))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "R?") (unit 1)
         )
@@ -4193,7 +4199,7 @@
     )
     (pin "1" (uuid d14068d7-eda5-4d22-9854-683db0c9d87b))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -4231,19 +4237,19 @@
     (property "Assembling" "X" (at 234.95 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C23255" (at 234.95 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Current" "" (at 234.95 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Tolerance" "1%" (at 234.95 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C23255" (at 234.95 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a0e46d2a-ec93-4fdd-9581-41b83cc15cb2))
     (pin "2" (uuid f7bd3e5d-b088-4a20-9345-4caf08a5ffa8))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "R86") (unit 1)
         )
@@ -4278,9 +4284,6 @@
     (property "Assembling" "X" (at 166.37 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C72041" (at 166.37 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Rated Power" "" (at 166.37 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4293,10 +4296,13 @@
     (property "Rated Current" "" (at 166.37 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C72041" (at 166.37 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 0eb3213d-d089-4ec6-aa1f-e2b3994a9e10))
     (pin "2" (uuid 831ca864-6f78-489c-936e-a735f715b26b))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "D?") (unit 1)
         )
@@ -4324,7 +4330,7 @@
     )
     (pin "1" (uuid 666514bd-3f1e-4375-bb36-168833f5f2a7))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
           (reference "#PWR?") (unit 1)
         )
@@ -4353,9 +4359,6 @@
     (property "Assembling" "X" (at 140.97 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC Part Number" "C75510" (at 140.97 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (property "Manufacturer" "UTC(Unisonic Tech) " (at 140.97 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4365,11 +4368,14 @@
     (property "Rated Current" "" (at 140.97 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C75510" (at 140.97 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d35cac53-4c28-447b-a99e-560ab9226638))
     (pin "2" (uuid 5fad7641-ef74-4951-96b0-e127ff3559f8))
     (pin "3" (uuid ddaa7254-9447-480b-aa7e-d9b0212ef301))
     (instances
-      (project "SmallDSPMainBoard"
+      (project "SmallDSPDual"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/fddff62d-3730-446b-bf11-5e72dab81f61"
           (reference "U14") (unit 1)
         )
