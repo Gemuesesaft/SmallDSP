@@ -1227,4 +1227,9 @@
   (pad "EP" thru_hole circle (at 2 0) (size 0.8 0.8) (drill 0.4) (layers "*.Cu" "*.Mask") (tstamp 98c8f74f-4ec0-456f-8655-7185d867c39d))
   (pad "EP" thru_hole circle (at 2 1) (size 0.8 0.8) (drill 0.4) (layers "*.Cu" "*.Mask") (tstamp 3c2a8e4b-6a00-4b37-88f0-09a5d4231992))
   (pad "EP" thru_hole circle (at 2 2) (size 0.8 0.8) (drill 0.4) (layers "*.Cu" "*.Mask") (tstamp da1b69e3-e23c-4a78-a66c-e8ca3f66f083))
+  (model ":KICAD7_3DMODEL_DIR:Package_DFN_QFN.3dshapes/QFN-76-1EP_9x9mm_P0.4mm_EP5.81x6.31mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1.4 1.4 1))
+    (rotate (xyz 0 0 0))
+  )
 )
