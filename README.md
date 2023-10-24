@@ -18,8 +18,8 @@ Current status:
 I've planed for 6 different modules:
 
 - A compact one with two analogue input and output channels (SmallDSP Dual).
-- A very small with only digital I2S IOs(SmallDSP Digi).
-- A very small module with only one analogue input and output(SmallDSPMini).
+- A very small with only digital I2S IOs (SmallDSP Digi).
+- A very small module with only one analogue input and output (SmallDSPMini).
 - A similar than the Mini, but with and Microphone preamp (SmallDSP Micro). 
     Perhaps powered by phantom power.
 - One with 16 analogue IOs (SmallDSP Multi).
@@ -35,7 +35,7 @@ There are three different versions of the used DSP Chip:
 - And the ADAU1467WBCPZ300. This is also a faster version (max. 300MHz) with
     more memory 80kWords data and 24kWords program memory. The expanded memory
     is useful if long delays on multiple channels are required.
-All versions are pin-compatible, so one cane use the version, best suited for 
+All versions are pin-compatible, so one can use the version, best suited for 
 the use case. 
 
 The Dual, Digi, Mini and if phantom power isn't possible, the Micro, shall be
@@ -53,9 +53,9 @@ used ADCs and DAC that are configured directly by setting specific pins,
 because the usage of the I2C/SPI master feature an ADAU DSPs is, at least
 to my knowledge, not very user-friendly. Please correct me if I'm wrong there 
 I would very much like to know an easy way to use that feature.
-The Maxi is an exception in that it has a STM32 MCU and the PCB. That is because
-the used Codecs are only controllable over I2C/SPI and are way cheaper than
-pin-controllable alternatives.
+The Maxi is an exception in that, as it has a STM32 MCU and the PCB. That is 
+because the used Codecs are only controllable over I2C/SPI and are way cheaper
+than pin-controllable alternatives.
 
 A detailed documentation is planned but the current focus lies on finishing
 the PCBs and the testing of those. Detailed performance measurements will
