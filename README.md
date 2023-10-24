@@ -7,8 +7,8 @@ This Chip is easy to program with Sigma Studio, a node based development
 environment and pretty powerful for its price.
 
 Current status:
-- Dual: Rev 1.1. Functionality finished has to be validated.
-- Maxi: Rev 1.0. Functionality finished has to be validated.
+- Dual: Rev 1.1: Layout finished, functionality has to be validated.
+- Maxi: Rev 1.0: Layout finished, functionality has to be validated.
 - Multi: Rev 1.0: Schematic unfinished.
 - Mini: Nothing done yet.
 - Micro: Nothing done yet.
