@@ -45,4 +45,9 @@
   (pad "12" thru_hole circle (at 5 1.25) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp ba77ac35-537c-4b70-bdc7-ea0a16fa171b))
   (pad "G" thru_hole circle (at -6.6 -2.8) (size 2 2) (drill 1.25) (layers "*.Cu" "*.Mask") (tstamp 19ba0c20-77c0-4226-9482-16a0d9703c97))
   (pad "G" thru_hole circle (at 6.6 2.8) (size 2 2) (drill 1.25) (layers "*.Cu" "*.Mask") (tstamp 726ed5c4-cd3d-4bf9-a419-ab2260568f76))
+  (model "/Users/till/Documents/Projects/Personal/SmallDSP/Libs/Project_3D.3dshapes/EG4208A.stp"
+    (offset (xyz 0 0 4))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 180))
+  )
 )

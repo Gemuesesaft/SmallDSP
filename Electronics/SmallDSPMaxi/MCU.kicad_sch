@@ -2083,7 +2083,7 @@
   (symbol (lib_id "Device:R_Small") (at 175.26 38.1 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0035aebf-50e3-4d60-8b8c-e7b9e6bf7a32)
-    (property "Reference" "R68" (at 175.26 33.02 90)
+    (property "Reference" "R69" (at 175.26 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 175.26 35.56 90)
@@ -2124,7 +2124,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R68") (unit 1)
+          (reference "R69") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2162,7 +2162,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0352") (unit 1)
+          (reference "#PWR0353") (unit 1)
         )
       )
     )
@@ -2171,7 +2171,7 @@
   (symbol (lib_id "power:+3V3") (at 54.61 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 08ca50d6-a025-4fa1-8076-68adc2071812)
-    (property "Reference" "#PWR0336" (at 54.61 91.44 0)
+    (property "Reference" "#PWR0337" (at 54.61 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 54.61 83.82 0)
@@ -2187,7 +2187,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0336") (unit 1)
+          (reference "#PWR0337") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2266,7 +2266,7 @@
   (symbol (lib_id "power:GND") (at 132.08 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0f0fff68-8b4f-4865-a6df-17eef66da4e6)
-    (property "Reference" "#PWR0350" (at 132.08 43.18 0)
+    (property "Reference" "#PWR0351" (at 132.08 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 40.64 0)
@@ -2282,7 +2282,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0350") (unit 1)
+          (reference "#PWR0351") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2355,7 +2355,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0345") (unit 1)
+          (reference "#PWR0346") (unit 1)
         )
       )
     )
@@ -2439,7 +2439,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0341") (unit 1)
+          (reference "#PWR0342") (unit 1)
         )
       )
     )
@@ -2448,7 +2448,7 @@
   (symbol (lib_id "Device:R_Small") (at 204.47 38.1 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1972ac8b-dced-40d1-b136-b09cf7861ea5)
-    (property "Reference" "R70" (at 204.47 33.02 90)
+    (property "Reference" "R71" (at 204.47 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 204.47 35.56 90)
@@ -2489,7 +2489,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R70") (unit 1)
+          (reference "R71") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2564,7 +2564,7 @@
   (symbol (lib_id "power:+3V3") (at 45.72 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1eee2909-6ab8-47cd-b24f-4d236b144e5f)
-    (property "Reference" "#PWR0331" (at 45.72 53.34 0)
+    (property "Reference" "#PWR0332" (at 45.72 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 45.72 45.72 0)
@@ -2580,7 +2580,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0331") (unit 1)
+          (reference "#PWR0332") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2599,7 +2599,7 @@
   (symbol (lib_id "power:GND") (at 186.69 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 237b3afb-08ed-4e20-92b0-0375ba1a3641)
-    (property "Reference" "#PWR0362" (at 186.69 50.8 0)
+    (property "Reference" "#PWR0363" (at 186.69 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 186.69 48.26 0)
@@ -2615,7 +2615,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0362") (unit 1)
+          (reference "#PWR0363") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2634,7 +2634,7 @@
   (symbol (lib_id "power:+3V3") (at 107.95 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 293e3884-1c5a-4573-bba1-b49489ab55f6)
-    (property "Reference" "#PWR0344" (at 107.95 50.8 0)
+    (property "Reference" "#PWR0345" (at 107.95 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 107.95 43.18 0)
@@ -2650,7 +2650,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0344") (unit 1)
+          (reference "#PWR0345") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2669,7 +2669,7 @@
   (symbol (lib_id "power:GND") (at 149.86 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2dcd245f-a243-47d9-9871-9f5b552755f3)
-    (property "Reference" "#PWR0356" (at 149.86 43.18 0)
+    (property "Reference" "#PWR0357" (at 149.86 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.86 40.64 0)
@@ -2685,7 +2685,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0356") (unit 1)
+          (reference "#PWR0357") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2723,7 +2723,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0342") (unit 1)
+          (reference "#PWR0343") (unit 1)
         )
       )
     )
@@ -2751,7 +2751,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0364") (unit 1)
+          (reference "#PWR0365") (unit 1)
         )
       )
     )
@@ -2816,7 +2816,7 @@
   (symbol (lib_id "Device:R_Small") (at 107.95 50.8 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 34d0084c-d5e7-471f-9ac0-233c67d2943a)
-    (property "Reference" "R67" (at 109.22 49.53 0)
+    (property "Reference" "R68" (at 109.22 49.53 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 109.22 52.07 0)
@@ -2857,7 +2857,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R67") (unit 1)
+          (reference "R68") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -2876,7 +2876,7 @@
   (symbol (lib_id "Device:R_Small") (at 39.37 58.42 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 395fc6b7-eceb-46a7-9aa8-bac6f632eee6)
-    (property "Reference" "R58" (at 40.64 57.15 0)
+    (property "Reference" "R59" (at 40.64 57.15 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 40.64 59.69 0)
@@ -2917,7 +2917,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R58") (unit 1)
+          (reference "R59") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3020,7 +3020,7 @@
   (symbol (lib_id "power:+3V3") (at 59.69 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4234ca08-4513-45fe-b273-7e3478af5807)
-    (property "Reference" "#PWR0337" (at 59.69 63.5 0)
+    (property "Reference" "#PWR0338" (at 59.69 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 59.69 55.88 0)
@@ -3036,7 +3036,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0337") (unit 1)
+          (reference "#PWR0338") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3055,7 +3055,7 @@
   (symbol (lib_id "power:+3V3") (at 40.64 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4364683f-7a17-4940-8fd6-cacb340d4cc1)
-    (property "Reference" "#PWR0330" (at 40.64 78.74 0)
+    (property "Reference" "#PWR0331" (at 40.64 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 40.64 71.12 0)
@@ -3071,7 +3071,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0330") (unit 1)
+          (reference "#PWR0331") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3090,7 +3090,7 @@
   (symbol (lib_id "power:+3V3") (at 46.99 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 44b581b5-7415-40e3-9fbd-ceee95ba4611)
-    (property "Reference" "#PWR0332" (at 46.99 73.66 0)
+    (property "Reference" "#PWR0333" (at 46.99 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 46.99 66.04 0)
@@ -3106,7 +3106,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0332") (unit 1)
+          (reference "#PWR0333") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3160,7 +3160,7 @@
   (symbol (lib_id "power:GND") (at 140.97 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4da45cc7-3f0b-4a19-b8b5-cd379bbae55d)
-    (property "Reference" "#PWR0354" (at 140.97 43.18 0)
+    (property "Reference" "#PWR0355" (at 140.97 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.97 40.64 0)
@@ -3176,7 +3176,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0354") (unit 1)
+          (reference "#PWR0355") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3195,7 +3195,7 @@
   (symbol (lib_id "Device:R_Small") (at 52.07 48.26 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 50665273-9d69-41c1-bf15-e74db72efec6)
-    (property "Reference" "R63" (at 53.34 46.99 0)
+    (property "Reference" "R64" (at 53.34 46.99 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 53.34 49.53 0)
@@ -3236,7 +3236,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R63") (unit 1)
+          (reference "R64") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3290,7 +3290,7 @@
   (symbol (lib_id "Device:R_Small") (at 54.61 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 54aad64e-5530-4480-bb01-98495b59dc7c)
-    (property "Reference" "R65" (at 55.88 90.17 0)
+    (property "Reference" "R66" (at 55.88 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2k2" (at 55.88 92.71 0)
@@ -3331,7 +3331,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R65") (unit 1)
+          (reference "R66") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3350,7 +3350,7 @@
   (symbol (lib_id "power:GND") (at 158.75 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 56f09c50-f630-415c-bb95-65d6e7b13bc6)
-    (property "Reference" "#PWR0358" (at 158.75 43.18 0)
+    (property "Reference" "#PWR0359" (at 158.75 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 158.75 40.64 0)
@@ -3366,7 +3366,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0358") (unit 1)
+          (reference "#PWR0359") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3441,7 +3441,7 @@
   (symbol (lib_id "Device:R_Small") (at 53.34 68.58 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5990d818-72c0-4a1e-b805-016dc29d8a9a)
-    (property "Reference" "R64" (at 54.61 67.31 0)
+    (property "Reference" "R65" (at 54.61 67.31 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 54.61 69.85 0)
@@ -3482,7 +3482,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R64") (unit 1)
+          (reference "R65") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3501,7 +3501,7 @@
   (symbol (lib_id "Device:R_Small") (at 245.11 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 599aaaa9-9c8e-452e-8708-9a62f5e1a2e1)
-    (property "Reference" "R73" (at 246.38 26.67 0)
+    (property "Reference" "R74" (at 246.38 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 246.38 29.21 0)
@@ -3527,7 +3527,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R73") (unit 1)
+          (reference "R74") (unit 1)
         )
       )
     )
@@ -3536,7 +3536,7 @@
   (symbol (lib_id "Device:R_Small") (at 59.69 63.5 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c2936c2-202a-47fc-b53a-b626377fcb89)
-    (property "Reference" "R66" (at 60.96 62.23 0)
+    (property "Reference" "R67" (at 60.96 62.23 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 60.96 64.77 0)
@@ -3577,7 +3577,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R66") (unit 1)
+          (reference "R67") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3596,7 +3596,7 @@
   (symbol (lib_id "power:GND") (at 77.47 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5fa161f8-70f3-41d5-a7ca-04015dd5707b)
-    (property "Reference" "#PWR0338" (at 77.47 63.5 0)
+    (property "Reference" "#PWR0339" (at 77.47 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 77.47 60.96 0)
@@ -3612,7 +3612,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0338") (unit 1)
+          (reference "#PWR0339") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3793,7 +3793,7 @@
   (symbol (lib_id "power:GND") (at 161.29 114.3 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 66454ce2-a31c-4bbc-80a5-8e3ef294304f)
-    (property "Reference" "#PWR0359" (at 161.29 120.65 0)
+    (property "Reference" "#PWR0360" (at 161.29 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 161.29 118.11 0)
@@ -3809,7 +3809,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0359") (unit 1)
+          (reference "#PWR0360") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3847,7 +3847,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0351") (unit 1)
+          (reference "#PWR0352") (unit 1)
         )
       )
     )
@@ -3912,7 +3912,7 @@
   (symbol (lib_id "power:GND") (at 123.19 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 734eff36-4aa5-4eff-b5be-fde916a81961)
-    (property "Reference" "#PWR0348" (at 123.19 43.18 0)
+    (property "Reference" "#PWR0349" (at 123.19 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 123.19 40.64 0)
@@ -3928,7 +3928,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0348") (unit 1)
+          (reference "#PWR0349") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3947,7 +3947,7 @@
   (symbol (lib_id "power:+3V3") (at 77.47 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 79921920-813f-42fd-84ce-1ce1338c0047)
-    (property "Reference" "#PWR0339" (at 77.47 80.01 0)
+    (property "Reference" "#PWR0340" (at 77.47 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 77.47 72.39 0)
@@ -3963,7 +3963,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0339") (unit 1)
+          (reference "#PWR0340") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -3982,7 +3982,7 @@
   (symbol (lib_id "power:GND") (at 219.71 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7ed5e8f3-55f3-486d-b823-0e75b2a00709)
-    (property "Reference" "#PWR0367" (at 219.71 116.84 0)
+    (property "Reference" "#PWR0368" (at 219.71 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 219.71 114.3 0)
@@ -3998,7 +3998,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0367") (unit 1)
+          (reference "#PWR0368") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4070,7 +4070,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0363") (unit 1)
+          (reference "#PWR0364") (unit 1)
         )
       )
     )
@@ -4079,7 +4079,7 @@
   (symbol (lib_id "power:+3V3") (at 33.02 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 864a5f14-8fda-412e-856f-b6fe4cd7cf21)
-    (property "Reference" "#PWR0328" (at 33.02 63.5 0)
+    (property "Reference" "#PWR0329" (at 33.02 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 33.02 55.88 0)
@@ -4095,7 +4095,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0328") (unit 1)
+          (reference "#PWR0329") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4133,7 +4133,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0349") (unit 1)
+          (reference "#PWR0350") (unit 1)
         )
       )
     )
@@ -4228,7 +4228,7 @@
   (symbol (lib_id "power:+3V3") (at 48.26 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b2e9eaf-7c36-4287-9b98-8bb74ec16d29)
-    (property "Reference" "#PWR0333" (at 48.26 96.52 0)
+    (property "Reference" "#PWR0334" (at 48.26 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 48.26 88.9 0)
@@ -4244,7 +4244,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0333") (unit 1)
+          (reference "#PWR0334") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4263,7 +4263,7 @@
   (symbol (lib_id "power:+3V3") (at 52.07 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8ca105d7-e58d-404c-a224-d95d948c0d61)
-    (property "Reference" "#PWR0334" (at 52.07 48.26 0)
+    (property "Reference" "#PWR0335" (at 52.07 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 52.07 40.64 0)
@@ -4279,7 +4279,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0334") (unit 1)
+          (reference "#PWR0335") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4373,7 +4373,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0353") (unit 1)
+          (reference "#PWR0354") (unit 1)
         )
       )
     )
@@ -4382,7 +4382,7 @@
   (symbol (lib_id "power:+3V3") (at 39.37 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9924b318-c342-4dee-bf37-ee4c87339c06)
-    (property "Reference" "#PWR0329" (at 39.37 58.42 0)
+    (property "Reference" "#PWR0330" (at 39.37 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 39.37 50.8 0)
@@ -4398,7 +4398,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0329") (unit 1)
+          (reference "#PWR0330") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4417,7 +4417,7 @@
   (symbol (lib_id "power:GND") (at 170.18 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 998438fd-ff3e-47c9-9b90-51c6afd1bee9)
-    (property "Reference" "#PWR0360" (at 170.18 120.65 0)
+    (property "Reference" "#PWR0361" (at 170.18 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 170.18 118.11 0)
@@ -4433,7 +4433,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0360") (unit 1)
+          (reference "#PWR0361") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4452,7 +4452,7 @@
   (symbol (lib_id "power:GND") (at 77.47 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a188d6fa-5f96-4f0f-8a2a-10be518b77ce)
-    (property "Reference" "#PWR0340" (at 77.47 97.79 0)
+    (property "Reference" "#PWR0341" (at 77.47 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 77.47 95.25 0)
@@ -4468,7 +4468,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0340") (unit 1)
+          (reference "#PWR0341") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4548,7 +4548,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0357") (unit 1)
+          (reference "#PWR0358") (unit 1)
         )
       )
     )
@@ -4576,7 +4576,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0361") (unit 1)
+          (reference "#PWR0362") (unit 1)
         )
       )
     )
@@ -4645,7 +4645,7 @@
   (symbol (lib_id "Device:R_Small") (at 46.99 73.66 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b243e51d-cf28-4284-8c1e-141ea9a5bf46)
-    (property "Reference" "R61" (at 48.26 72.39 0)
+    (property "Reference" "R62" (at 48.26 72.39 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 48.26 74.93 0)
@@ -4686,7 +4686,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R61") (unit 1)
+          (reference "R62") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4705,7 +4705,7 @@
   (symbol (lib_id "Device:R_Small") (at 215.9 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid b381eaa9-6471-4187-af3b-3ab76ec658be)
-    (property "Reference" "R71" (at 217.17 26.67 0)
+    (property "Reference" "R72" (at 217.17 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 217.17 29.21 0)
@@ -4731,7 +4731,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R71") (unit 1)
+          (reference "R72") (unit 1)
         )
       )
     )
@@ -4800,7 +4800,7 @@
   (symbol (lib_id "power:GND") (at 114.3 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b954add2-24f2-4cef-b6b2-51c4c52e3c81)
-    (property "Reference" "#PWR0346" (at 114.3 43.18 0)
+    (property "Reference" "#PWR0347" (at 114.3 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 114.3 40.64 0)
@@ -4816,7 +4816,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0346") (unit 1)
+          (reference "#PWR0347") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4835,7 +4835,7 @@
   (symbol (lib_id "Device:R_Small") (at 48.26 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bb48c301-0adc-42a4-beec-f7a6bc231175)
-    (property "Reference" "R62" (at 49.53 95.25 0)
+    (property "Reference" "R63" (at 49.53 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2k2" (at 49.53 97.79 0)
@@ -4876,7 +4876,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R62") (unit 1)
+          (reference "R63") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -4895,7 +4895,7 @@
   (symbol (lib_id "Device:R_Small") (at 40.64 78.74 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bc397b3f-f592-404c-8130-e5c530f037b7)
-    (property "Reference" "R59" (at 41.91 77.47 0)
+    (property "Reference" "R60" (at 41.91 77.47 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 41.91 80.01 0)
@@ -4936,7 +4936,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R59") (unit 1)
+          (reference "R60") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5015,7 +5015,7 @@
   (symbol (lib_id "power:+3V3") (at 53.34 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c82ed681-8b36-479c-81a1-ccdc00f400f4)
-    (property "Reference" "#PWR0335" (at 53.34 68.58 0)
+    (property "Reference" "#PWR0336" (at 53.34 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 53.34 60.96 0)
@@ -5031,7 +5031,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0335") (unit 1)
+          (reference "#PWR0336") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5069,7 +5069,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0347") (unit 1)
+          (reference "#PWR0348") (unit 1)
         )
       )
     )
@@ -5097,7 +5097,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0368") (unit 1)
+          (reference "#PWR0369") (unit 1)
         )
       )
     )
@@ -5125,7 +5125,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0355") (unit 1)
+          (reference "#PWR0356") (unit 1)
         )
       )
     )
@@ -5134,7 +5134,7 @@
   (symbol (lib_id "power:GND") (at 245.11 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1cc1b9b-3e2e-4198-8e66-2acd3e410912)
-    (property "Reference" "#PWR0369" (at 245.11 50.8 0)
+    (property "Reference" "#PWR0370" (at 245.11 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 245.11 48.26 0)
@@ -5150,7 +5150,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0369") (unit 1)
+          (reference "#PWR0370") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5169,7 +5169,7 @@
   (symbol (lib_id "Device:R_Small") (at 45.72 53.34 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d258a381-17c5-46be-a5f7-1a2b51cf7a22)
-    (property "Reference" "R60" (at 46.99 52.07 0)
+    (property "Reference" "R61" (at 46.99 52.07 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 46.99 54.61 0)
@@ -5210,7 +5210,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R60") (unit 1)
+          (reference "R61") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5365,7 +5365,7 @@
   (symbol (lib_id "power:GND") (at 99.06 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d5572587-7299-44ca-a14b-65e2e53938df)
-    (property "Reference" "#PWR0343" (at 99.06 68.58 0)
+    (property "Reference" "#PWR0344" (at 99.06 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 102.87 63.5 0)
@@ -5381,7 +5381,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0343") (unit 1)
+          (reference "#PWR0344") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5400,7 +5400,7 @@
   (symbol (lib_id "Device:R_Small") (at 233.68 38.1 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d6a1b008-7feb-42a7-87b1-4f62a9951181)
-    (property "Reference" "R72" (at 233.68 33.02 90)
+    (property "Reference" "R73" (at 233.68 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 233.68 35.56 90)
@@ -5441,7 +5441,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R72") (unit 1)
+          (reference "R73") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5460,7 +5460,7 @@
   (symbol (lib_id "Device:R_Small") (at 33.02 63.5 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d8a99d93-8e00-4153-baba-0a05e261066a)
-    (property "Reference" "R57" (at 34.29 62.23 0)
+    (property "Reference" "R58" (at 34.29 62.23 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 34.29 64.77 0)
@@ -5501,7 +5501,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R57") (unit 1)
+          (reference "R58") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5593,7 +5593,7 @@
   (symbol (lib_id "power:GND") (at 215.9 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dc1cfbe5-0d1a-46e2-ab97-5068e18764a1)
-    (property "Reference" "#PWR0365" (at 215.9 50.8 0)
+    (property "Reference" "#PWR0366" (at 215.9 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 215.9 48.26 0)
@@ -5609,7 +5609,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0365") (unit 1)
+          (reference "#PWR0366") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5681,7 +5681,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0370") (unit 1)
+          (reference "#PWR0371") (unit 1)
         )
       )
     )
@@ -5750,7 +5750,7 @@
   (symbol (lib_id "power:+3V3") (at 219.71 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eae0b49b-eca7-42cc-8a91-3332e1925122)
-    (property "Reference" "#PWR0366" (at 219.71 106.68 0)
+    (property "Reference" "#PWR0367" (at 219.71 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 219.71 99.06 0)
@@ -5766,7 +5766,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "#PWR0366") (unit 1)
+          (reference "#PWR0367") (unit 1)
         )
       )
       (project "Microcontroller"
@@ -5947,7 +5947,7 @@
   (symbol (lib_id "Device:R_Small") (at 186.69 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid f6f34b0c-4b8a-42d6-8c57-e4eb96062a76)
-    (property "Reference" "R69" (at 187.96 26.67 0)
+    (property "Reference" "R70" (at 187.96 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 187.96 29.21 0)
@@ -5973,7 +5973,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
-          (reference "R69") (unit 1)
+          (reference "R70") (unit 1)
         )
       )
     )
