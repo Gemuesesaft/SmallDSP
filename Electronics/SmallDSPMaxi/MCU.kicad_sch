@@ -4,6 +4,10 @@
 
   (paper "A4")
 
+  (title_block
+    (date "2023-11-01")
+  )
+
   (lib_symbols
     (symbol "1_Project_Symbols:STM32F030C8Tx" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -20.32 39.37 0)
@@ -2119,8 +2123,8 @@
     (property "LCSC Part #" "C25741" (at 175.26 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8e582c65-3cc9-4373-99a7-4449d3b642c2))
-    (pin "2" (uuid 75823cf3-55d7-442f-a102-20ae34e76275))
+    (pin "1" (uuid d180c0a9-f998-48ac-802b-a29061664701))
+    (pin "2" (uuid b161a44c-08dc-4ab9-af3f-321038e37de3))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -2242,8 +2246,8 @@
     (property "LCSC Part #" "C307331" (at 149.86 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2e9e0c2f-33f8-4fae-9dc1-997e6282edef))
-    (pin "2" (uuid 3bed2d45-f290-4b7c-96a0-d3c151f724c1))
+    (pin "1" (uuid 9c8786f8-6af6-4974-8f91-144015ce9e16))
+    (pin "2" (uuid 10764a38-3c08-41f1-ac19-9fa263c59021))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -2322,8 +2326,8 @@
     (property "Part Number" "-" (at 179.07 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3a332b6a-00da-465b-8c2d-0f7f1c5f6239))
-    (pin "2" (uuid 76c87003-24ef-474c-b4f5-82ec97ddd9f4))
+    (pin "1" (uuid 9bc75470-3c99-4cbf-9cba-d2319ba6841d))
+    (pin "2" (uuid a8fe61c4-5308-4113-aaf1-c612530e5182))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -2403,8 +2407,8 @@
     (property "LCSC Part #" "C78395" (at 214.63 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 92de36bb-2784-4bf9-8ae7-92589b3e2c97))
-    (pin "2" (uuid 27d42b52-9dd7-4159-ad76-ff503d57d0c0))
+    (pin "1" (uuid 509e1494-6c3a-4fd3-bff3-82c10e275633))
+    (pin "2" (uuid c01432e8-1c6f-4a50-8074-2099d6a43ca7))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
@@ -2484,8 +2488,8 @@
     (property "LCSC Part #" "C25741" (at 204.47 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9e5b4b2f-84c8-4215-b028-be256220e5ea))
-    (pin "2" (uuid a58c0b81-c34f-4dbd-a207-b761c4206ca7))
+    (pin "1" (uuid 4979fbcd-2ac8-434e-9820-76aa4dbf3e10))
+    (pin "2" (uuid 62aac3d6-06a3-4517-b2e6-4bf1c9cb843c))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -2547,8 +2551,8 @@
     (property "LCSC Part #" "C78395" (at 246.38 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 576b2bdf-d72a-4906-baf8-5dfe807ee5f6))
-    (pin "2" (uuid 6e28e926-3104-46e3-819f-f2657993bee1))
+    (pin "1" (uuid 65db143d-10fb-4094-ad4a-8e4fc5484fae))
+    (pin "2" (uuid b3ed58ad-f65c-4710-b654-846359c62662))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
@@ -2799,8 +2803,8 @@
     (property "LCSC Part #" "C78395" (at 251.46 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 109ea2de-91eb-4c7e-bd1d-13dff1a4f07f))
-    (pin "2" (uuid 565a3371-4f1d-4a46-b346-34c468ff4435))
+    (pin "1" (uuid ca2fa6b8-df63-497d-a73a-62c4c1d5788e))
+    (pin "2" (uuid c487b9ec-e1f9-475d-a43b-68969a1b6e95))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
@@ -2852,8 +2856,8 @@
     (property "LCSC Part #" "C25741" (at 107.95 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4b729e61-cf66-49d5-a1a3-fecacd2f6be0))
-    (pin "2" (uuid 596a2aae-82e0-4324-9186-0504f929513c))
+    (pin "1" (uuid e81056c5-9aa5-4e39-bc30-96a3b14bccd5))
+    (pin "2" (uuid cbaca0a6-5d00-458f-99de-aa4f07a995be))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -2912,8 +2916,8 @@
     (property "LCSC Part #" "C25741" (at 39.37 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7f5a3ea2-6491-42d4-ad93-4b5e7f7680c0))
-    (pin "2" (uuid 37440769-23bc-4f71-a419-427d677b90a3))
+    (pin "1" (uuid d80543f7-ab7e-40c3-b826-0a9c96f13b5d))
+    (pin "2" (uuid e2e70da1-22c7-48f8-b3b9-ad01f48c4d79))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -2960,54 +2964,54 @@
     (property "LCSC Part #" "C23922" (at 135.89 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f6b99ffb-a56f-434b-9d15-9c7398e5d4bf))
-    (pin "10" (uuid 2291e074-6c9c-418c-8cfa-f1635aa3f566))
-    (pin "11" (uuid 1478b92b-1db0-4de5-9277-c48a7dbf2084))
-    (pin "12" (uuid 3e909ce2-48e5-4ace-9096-874c6ee388aa))
-    (pin "13" (uuid 200b7eb1-4b68-480e-aa6c-a4d5d9952a96))
-    (pin "14" (uuid df31f13f-8121-40c7-bb04-b66376773164))
-    (pin "15" (uuid de1d0d59-6014-4446-ae9d-987ac2f7d9c8))
-    (pin "16" (uuid 5e0ec0cc-bed4-4121-b56b-942d4a36fc21))
-    (pin "17" (uuid 92ebc5b2-2b7f-441c-994e-afeb04520dbf))
-    (pin "18" (uuid b8ffa763-4af1-4b26-90b2-9a45c1333ea6))
-    (pin "19" (uuid 1a641eb3-3da4-4b49-85fb-63a93f21eacf))
-    (pin "2" (uuid c089a6e2-546a-40e1-9a82-8d1bb8827ca8))
-    (pin "20" (uuid 9acb77d9-7ba7-44bf-8317-3f9c0a01f3ab))
-    (pin "21" (uuid 13132462-e3d1-4ed2-ad26-2b2095a00fcb))
-    (pin "22" (uuid 6348cd54-9228-478b-a578-5f7dd8f8acf7))
-    (pin "23" (uuid 67419ddf-68ba-4862-80df-bd685aa04523))
-    (pin "24" (uuid 65704a05-00f8-4679-a64c-a54fd697b0f7))
-    (pin "25" (uuid dd73061c-9574-46ef-a498-ba4316f010a6))
-    (pin "26" (uuid 0abf1655-e9de-420e-b515-50d4c0f3ee6c))
-    (pin "27" (uuid b7b34e03-ad30-4516-adb2-384142f6749c))
-    (pin "28" (uuid 559119ef-20e2-478f-825b-d7bad803e000))
-    (pin "29" (uuid 53c6b23d-c6e5-4cc3-b39a-a0c77e965224))
-    (pin "3" (uuid 193e974b-8eda-4ea8-a43f-3fcbea05ae59))
-    (pin "30" (uuid 01e32220-25e8-4cdb-80ab-f03ad961d7d8))
-    (pin "31" (uuid 581967eb-0e72-4ead-9f43-d2702f787b07))
-    (pin "32" (uuid 66587b80-3fd5-4575-b93d-66d557fbba02))
-    (pin "33" (uuid 65bc0b74-2c6f-4832-94fb-51ffa6d739ae))
-    (pin "34" (uuid 61deee2a-9621-48a9-8eb9-786ccbc5581e))
-    (pin "35" (uuid ecbc5184-4dab-48fa-8990-96c0d2b19718))
-    (pin "36" (uuid 49ed953b-2e39-44af-bf71-17d29c36edde))
-    (pin "37" (uuid f27051a0-a9d0-4dfa-80bf-1a1ebb5baf0c))
-    (pin "38" (uuid 86e7de6b-9f07-473b-a11e-f208839c6ce9))
-    (pin "39" (uuid 30f91edb-719d-422f-8833-1074000d4dba))
-    (pin "4" (uuid 43116f73-20ee-4217-81f3-becd0120e207))
-    (pin "40" (uuid f2d3371b-3d33-40e3-9087-011fd9f4aac4))
-    (pin "41" (uuid c890eea7-6038-4b27-a56f-1f94a707c440))
-    (pin "42" (uuid f5fa2280-b6b5-4efe-b298-c1375276ae6a))
-    (pin "43" (uuid 631f90a5-4b72-4002-a65c-c40ea5236c62))
-    (pin "44" (uuid cd191e5b-2d33-4377-a678-79eaca079eaf))
-    (pin "45" (uuid 9abe1002-c46a-42ba-b604-4f8ed679726c))
-    (pin "46" (uuid a46af528-9447-492a-8e92-c145d2ef28d7))
-    (pin "47" (uuid 38d922f3-956f-47da-ad85-a6b173fabc43))
-    (pin "48" (uuid 69bf2234-762f-4dd2-98a1-4288f5354bf8))
-    (pin "5" (uuid 6130aebe-f7d2-464d-b131-a37de3deb154))
-    (pin "6" (uuid dbe85d66-f626-4f7d-a099-8ae3294b6cf8))
-    (pin "7" (uuid 57409178-a68c-4397-9b38-011efe742dc0))
-    (pin "8" (uuid 915318c8-db0a-4970-b83c-6125738f6325))
-    (pin "9" (uuid 61782850-b654-44d5-b17b-a286a9874bfd))
+    (pin "1" (uuid a7d73f4e-3df2-487c-988a-1dc7131e96e1))
+    (pin "10" (uuid e84162eb-f3fe-4d67-83a0-abc44de3cc11))
+    (pin "11" (uuid 227385e4-0f4d-4dad-9021-778fa69334d0))
+    (pin "12" (uuid e3bd3897-93ab-4529-8f5e-5d9adcc6b5af))
+    (pin "13" (uuid 9d1c8a55-73a8-4392-a728-1fb304552d62))
+    (pin "14" (uuid 9e7e8577-bbdb-429f-a1b8-410df1e264ea))
+    (pin "15" (uuid 1773adf1-087a-4d4a-a564-b1f2af3214c5))
+    (pin "16" (uuid 18be0d6c-1981-4588-af16-d627621b8e42))
+    (pin "17" (uuid f608e4da-6340-4061-8ab8-9f06cadbba10))
+    (pin "18" (uuid 458ed415-2410-4043-bd9e-5c4cf48e79ff))
+    (pin "19" (uuid f67c8df7-58c5-4d32-b45e-f918283cc9ff))
+    (pin "2" (uuid 29725460-8a3c-4242-9c92-bf9753fedd2b))
+    (pin "20" (uuid 569325f9-b7ab-4246-bd1d-7cd576e2a159))
+    (pin "21" (uuid efe1d1d9-d440-46a6-b04a-c64ed675c05a))
+    (pin "22" (uuid cb28cf29-421f-41e7-a230-96ed227544a7))
+    (pin "23" (uuid 9f9ceaf1-e995-4e10-b882-d879f97a5838))
+    (pin "24" (uuid f441717e-65a9-4cdd-90bd-8bdeb3274eec))
+    (pin "25" (uuid 935c6183-eab7-4d29-8c41-fc08921e522b))
+    (pin "26" (uuid a042387f-3b8c-4c72-af5d-bdf1f5afb885))
+    (pin "27" (uuid 4f2144c3-0fce-462e-ba7b-9ff72f4a8fd4))
+    (pin "28" (uuid f609bb2e-e8a5-468c-8b82-1b65f46efc3e))
+    (pin "29" (uuid aaf3a8fa-abb3-4b73-908a-4c0e908f4a3c))
+    (pin "3" (uuid 84f34e1d-bd2c-4482-98da-4067bee725f3))
+    (pin "30" (uuid dcb6db32-3806-4f00-bb31-93673c8b0310))
+    (pin "31" (uuid 15a7a448-2c58-418b-975c-da41f9e4d9f8))
+    (pin "32" (uuid 07921e99-52cd-4810-a4ee-f15788a8fe64))
+    (pin "33" (uuid 18ec6435-5fab-47f5-8cbe-7c7ab60f4248))
+    (pin "34" (uuid f7c208fc-5c1b-4383-86f0-80007842a033))
+    (pin "35" (uuid af27170e-7bf3-4a0c-a589-8449618e2cb8))
+    (pin "36" (uuid 583f7914-8a71-4eea-adfe-7c9af362b5a1))
+    (pin "37" (uuid c353fd44-ec37-4c14-946f-aedda9cf6a6e))
+    (pin "38" (uuid d505b22a-9cf7-4188-b4f8-8731f3bf4f43))
+    (pin "39" (uuid d9c50aea-d81b-4678-9ea7-88ef04ae58e7))
+    (pin "4" (uuid e0af8d6e-f329-43bf-bf82-a134190f78a6))
+    (pin "40" (uuid bc973b4e-f5db-4169-a48d-c853db1626d0))
+    (pin "41" (uuid cb252305-43b8-4838-b0d7-cc70ef1e7213))
+    (pin "42" (uuid 2fe27909-f61f-44d4-921d-fc8611e42c42))
+    (pin "43" (uuid f4584662-1802-4de0-8711-a4832ac3ee4c))
+    (pin "44" (uuid 3d77b99f-a252-4701-a0a5-97b82c993805))
+    (pin "45" (uuid b50ae779-3e30-487b-ac1d-d4022cb1550d))
+    (pin "46" (uuid 99429cc7-b438-4fe6-8262-2911eaf75c52))
+    (pin "47" (uuid da4ea5a0-d472-49ea-88a4-11dd84785c9c))
+    (pin "48" (uuid 8ca8c610-28d7-4897-bab0-f0e3ba1dd721))
+    (pin "5" (uuid 339c32d9-48bb-425c-b0af-27fb568494c3))
+    (pin "6" (uuid f8676ba2-9858-4ea5-b1e2-fc98c51ea7c0))
+    (pin "7" (uuid f6b6f2a9-6f34-4d60-b1de-0e9204c792c5))
+    (pin "8" (uuid b1c531b7-c155-429d-b046-90ca8142f43d))
+    (pin "9" (uuid 565d0e5d-c9a9-4cba-b28d-977317fd38b4))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3146,8 +3150,8 @@
     (property "Part Number" "-" (at 237.49 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 96a931af-4d00-495c-8628-a97b06386d6a))
-    (pin "2" (uuid 8874bdd9-7169-492e-a301-762931785c44))
+    (pin "1" (uuid 4187e451-5f0d-4231-a85b-6efd9b5b1839))
+    (pin "2" (uuid 97d13f62-21b0-4c0a-90b3-0f2574cf0414))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3231,8 +3235,8 @@
     (property "LCSC Part #" "C25741" (at 52.07 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3930e4b9-e933-4547-87e3-97458f577ef4))
-    (pin "2" (uuid ca679d78-06f0-4902-b304-8bc493764837))
+    (pin "1" (uuid 729845d7-c1af-4bb1-86f2-b5ce08357747))
+    (pin "2" (uuid 1b2eaa37-1ddb-4768-b5be-5caa55eae6cf))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3276,8 +3280,8 @@
     (property "Part Number" "-" (at 208.28 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b331677d-485d-467a-872c-b764ccdea4bd))
-    (pin "2" (uuid 51daec2d-6fc9-4f3b-8851-2f75224ed824))
+    (pin "1" (uuid 3fde4fb5-2f4c-4573-9d4b-3ef25e4cb4fb))
+    (pin "2" (uuid 2254a0a5-c15c-4fa9-b474-2417e4c45b8c))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3326,8 +3330,8 @@
     (property "LCSC Part #" "C25879" (at 54.61 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6acf2dd4-27a9-4f21-af7f-b3cb402f0490))
-    (pin "2" (uuid b54f4ed1-a9fc-41d3-a9f2-ab54de2e471a))
+    (pin "1" (uuid 7f4681ca-ad8e-4fbf-94b1-483a93557344))
+    (pin "2" (uuid c0dc5aa8-84a6-4643-9159-cde93ba9e825))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3424,8 +3428,8 @@
     (property "LCSC Part #" "C78395" (at 241.3 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 223eeba1-a1c2-4fed-b71c-63111c9d482e))
-    (pin "2" (uuid e2903d09-569d-4b9f-a9a6-889c758b6e96))
+    (pin "1" (uuid 3186bdde-dc53-42bf-ae7c-3fa092e9fd7d))
+    (pin "2" (uuid dad57482-838c-4d12-8af1-7d522ba765f1))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
@@ -3477,8 +3481,8 @@
     (property "LCSC Part #" "C25741" (at 53.34 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c0936c71-74e7-45e3-be23-437ea92e6c29))
-    (pin "2" (uuid 5ad36853-c680-43d5-b689-31ac3d106c25))
+    (pin "1" (uuid c170f95c-9c92-452f-abf9-3d6bd72df020))
+    (pin "2" (uuid b4384dcc-74fe-4059-8c30-5923daee171a))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3522,8 +3526,8 @@
     (property "Part Number" "-" (at 245.11 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ec2349b2-53e9-4508-b508-973e27fa7304))
-    (pin "2" (uuid 9766a972-5460-4bc0-b26d-4e5dedc4f831))
+    (pin "1" (uuid 57d182cb-e1c8-4f9c-ba8e-a604fe34dd20))
+    (pin "2" (uuid 29ae74a5-0ee4-4568-8b0e-dab8406c34d0))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3572,8 +3576,8 @@
     (property "LCSC Part #" "C25741" (at 59.69 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 76209177-5d4f-4025-b19e-8b16439ab300))
-    (pin "2" (uuid a2cd9028-d217-421f-9975-f922a80bde11))
+    (pin "1" (uuid a9832a55-f408-4b50-a1c6-668181a3b447))
+    (pin "2" (uuid c5e4afbd-27cd-4d12-a687-ebab5abd46f3))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3667,8 +3671,8 @@
     (property "LCSC Part #" "C1562" (at 170.18 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c475d457-0287-4d42-ac31-26d95f139d98))
-    (pin "2" (uuid 857094fe-b221-414c-93e8-55a849202bd1))
+    (pin "1" (uuid 677e4446-a259-4f7d-8523-5f15bb767fbb))
+    (pin "2" (uuid 9cdf81a1-eaa6-42a1-9c7f-b5839e60d4c0))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3715,9 +3719,9 @@
     (property "LCSC Part #" "C8545" (at 242.57 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce78e336-6478-4ef7-b0f6-4750a6671276))
-    (pin "2" (uuid 9470437e-e495-4a88-8fe5-82d146a81f4f))
-    (pin "3" (uuid 05081db1-305e-4d47-8f0b-dbed8f2456d6))
+    (pin "1" (uuid 1a09272d-9d3a-423f-ab30-b7ab70ba99b9))
+    (pin "2" (uuid 24370891-7098-4e0d-9e68-3de98e341bab))
+    (pin "3" (uuid 891ee27b-ad35-403e-846d-406ec518e35e))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3757,20 +3761,20 @@
     (property "LCSC Part #" "-" (at 228.6 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c14465c8-5875-45c3-a001-484ab38c7705))
-    (pin "10" (uuid 34c78289-6550-457a-b694-7e2e37ac4f82))
-    (pin "11" (uuid 534cb972-7c43-4817-8045-905a3a05858c))
-    (pin "12" (uuid 7e5e3877-5487-4a62-95de-2792074acbc3))
-    (pin "13" (uuid 1c3768dd-b633-45ff-9747-f30ff4380ad4))
-    (pin "14" (uuid 61a05b4e-1a98-4537-af45-9751b25e0caa))
-    (pin "2" (uuid 74f2234f-3736-48f2-95a5-9e3f8c7c738f))
-    (pin "3" (uuid 20f6a82a-c9bb-42df-9743-55bfc61457db))
-    (pin "4" (uuid b1dede66-89e8-4152-a140-f654a4f09c26))
-    (pin "5" (uuid 638b6182-60be-4319-acca-cf58c078bce2))
-    (pin "6" (uuid 77d45265-1eb7-4617-af41-3bfd6be2c997))
-    (pin "7" (uuid f8ae2507-8f93-4bb8-a7d5-fd1b672c96aa))
-    (pin "8" (uuid d402d012-e1fd-4e9e-83e9-d52bd50d14c2))
-    (pin "9" (uuid fdd4e737-1f24-4db9-bcac-bfc0097827d6))
+    (pin "1" (uuid dafec157-33ac-41a7-bb74-fbbd519fe1b5))
+    (pin "10" (uuid 8c942a19-8c6e-4558-9f2a-00b297a8302d))
+    (pin "11" (uuid 4c031fed-ee6c-4e97-8a0e-fe6a9bfd7c3e))
+    (pin "12" (uuid 68aeb371-ad71-4099-af54-ba778bec5a47))
+    (pin "13" (uuid 7ab7af9c-d188-46f1-b76f-9496a0e2e7c0))
+    (pin "14" (uuid 834feeaf-646d-4f30-90ee-7423dab83e3e))
+    (pin "2" (uuid c102788b-b73c-415f-bfe9-96e16f901904))
+    (pin "3" (uuid 3b75de76-99e2-4058-a533-c26149d6451c))
+    (pin "4" (uuid 7690b958-6628-4f9e-aadd-51db69290487))
+    (pin "5" (uuid 9bdec9f6-3b70-40e6-b0ad-e83c0b719193))
+    (pin "6" (uuid 04b08e4e-3d57-4ba6-b0da-03e7f863d762))
+    (pin "7" (uuid 98b76481-019e-425f-99db-6d7ea111fc57))
+    (pin "8" (uuid 8eca605f-3b72-4b23-91d3-9d83ca680d79))
+    (pin "9" (uuid 87f44630-96e3-4cd5-836f-68b9efb6fc34))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -3895,8 +3899,8 @@
     (property "LCSC Part #" "C78395" (at 91.44 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e8f1a963-a2b0-45e9-afa1-a88dcb7666dd))
-    (pin "2" (uuid 6d58d726-4c82-4574-869a-117af61e55d8))
+    (pin "1" (uuid 35db3773-6463-489c-8342-8e76fcc67ad8))
+    (pin "2" (uuid a83b5750-b824-4318-86b8-37e734457014))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
@@ -4038,7 +4042,7 @@
     (property "Part Number" "-" (at 110.49 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid adb18192-c109-4380-ac3b-d5b33fc927ec))
+    (pin "1" (uuid e8aec20e-00f6-4702-a00e-eca9daef8037))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4169,9 +4173,9 @@
     (property "LCSC Part #" "-" (at 77.47 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bdec222e-f61c-4bd0-a034-f5fc5252557a))
-    (pin "2" (uuid e151e3d4-3184-41c2-83e4-f2e86e9c1ee5))
-    (pin "3" (uuid 759cb441-ac21-42fb-a0f8-56ed46629e7b))
+    (pin "1" (uuid a278db17-8f81-43f2-949c-793ed8ef39f6))
+    (pin "2" (uuid 90c611bc-1efd-4949-a0b8-3f604ec7d50b))
+    (pin "3" (uuid 5e03b64b-8454-414a-83c3-271c7471217c))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4215,7 +4219,7 @@
     (property "Part Number" "-" (at 161.29 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 19438871-dfed-4404-a41a-f66a210d7b06))
+    (pin "1" (uuid 2c68c70d-d798-4b10-b50f-619a63b04472))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4337,8 +4341,8 @@
     (property "LCSC Part #" "C78395" (at 83.82 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 35b06497-b92d-40e5-90e2-c333986d43ea))
-    (pin "2" (uuid 3da0e203-03c5-48b0-918a-57530e09bf1e))
+    (pin "1" (uuid d21c00c0-ffb9-4d80-94e6-40abbe51b37a))
+    (pin "2" (uuid 0b41d8ac-a161-482e-980f-1cae6c0e81c3))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
@@ -4514,9 +4518,9 @@
     (property "LCSC Part #" "C8545" (at 184.15 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 75136d08-27b3-4a8c-b99b-25b586f4e8bf))
-    (pin "2" (uuid cc9b4970-2e83-4326-8838-d964184bd22d))
-    (pin "3" (uuid 62557b36-62fa-41c5-8330-fb392a95d605))
+    (pin "1" (uuid acdcab35-142d-45bb-b063-43e744ccade2))
+    (pin "2" (uuid d9f22481-dc02-49a7-a012-d990911049ab))
+    (pin "3" (uuid 5dba7dfd-2c25-42dc-a5e2-d9738a499fd9))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4621,8 +4625,8 @@
     (property "LCSC Part #" "C1562" (at 161.29 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 46579337-69ff-4cd3-a6a7-b3741e74b853))
-    (pin "2" (uuid bacefd36-aa06-485d-bf01-5bebc73b1cfe))
+    (pin "1" (uuid 2b6a20fe-31b3-46e4-8276-f1f77c3d4764))
+    (pin "2" (uuid 3712ecbd-046e-4e4e-bb6c-88380540d8ea))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4681,8 +4685,8 @@
     (property "LCSC Part #" "C25741" (at 46.99 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 972df88a-fa9e-4cb7-9feb-38e0070a694e))
-    (pin "2" (uuid 573967e3-72c7-4f17-88c3-d1bd538895b3))
+    (pin "1" (uuid 16adfb07-a56b-4420-a3d2-ad669d90330e))
+    (pin "2" (uuid 30cd080d-ded2-4e07-890b-94bdc1474ca5))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4726,8 +4730,8 @@
     (property "Part Number" "-" (at 215.9 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 351b0378-bfee-4397-98d9-5168d9fb40f7))
-    (pin "2" (uuid 0da34e38-8548-4b58-902e-f14900c73238))
+    (pin "1" (uuid 0b69b3bc-2334-4c1c-99a8-0ba5ce16e7de))
+    (pin "2" (uuid b683b66c-ee12-47e0-a29b-ed499ff631e1))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4776,8 +4780,8 @@
     (property "LCSC Part #" "C307331" (at 99.06 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bcdb4225-456c-4a43-8d9e-c1f7d40b1b25))
-    (pin "2" (uuid 82c68a70-2cb4-4993-a8e4-7373943c6afc))
+    (pin "1" (uuid bc640a5f-d12b-49e8-a9ca-1a5fc1136cc4))
+    (pin "2" (uuid 2ca6b2f9-6218-4bee-949f-a5227ac34de0))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4871,8 +4875,8 @@
     (property "LCSC Part #" "C25879" (at 48.26 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 44d495ee-8a18-46e9-b178-8b789155e76c))
-    (pin "2" (uuid 39077d67-061e-4694-afdb-21dea763eca7))
+    (pin "1" (uuid 786bf778-c915-466e-9488-dc46161944ad))
+    (pin "2" (uuid b001d0b5-3c78-4b68-b83d-4867fd04cc73))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4931,8 +4935,8 @@
     (property "LCSC Part #" "C25741" (at 40.64 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 124eb73c-fde2-48fb-a1a4-150ec2938d67))
-    (pin "2" (uuid 1c66c0d6-d0ef-4358-bd1e-938405ff33ff))
+    (pin "1" (uuid 8c51244f-bdbe-4a87-9169-8db395d8ddf9))
+    (pin "2" (uuid 2777421b-3259-42d8-91fc-e64739d93d76))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -4991,8 +4995,8 @@
     (property "LCSC Part #" "C307331" (at 132.08 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 90377df3-f4c4-44a3-99e5-5cfb39e5ca8a))
-    (pin "2" (uuid e20da122-b2da-4720-af41-76d12436f916))
+    (pin "1" (uuid b0d2fb7b-39e5-4f9d-b4f4-b8381975380f))
+    (pin "2" (uuid 63330fac-696d-4a23-8035-7e31006af4a1))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5205,8 +5209,8 @@
     (property "LCSC Part #" "C25741" (at 45.72 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ca07a94e-9c3a-4e6b-8d8f-3f3111e1205e))
-    (pin "2" (uuid c246729e-3fd5-42ba-af24-880e7b7db25b))
+    (pin "1" (uuid 63247743-8908-4499-ab18-e00459495446))
+    (pin "2" (uuid 15b7e22c-8059-4ce9-8333-ed98689e9432))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5271,8 +5275,8 @@
     (property "LCSC Part #" "C96446" (at 158.75 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 05ad7902-dd10-4ed4-a430-0fdf1e96c784))
-    (pin "2" (uuid 4cc5243b-ca22-4d2e-bd96-8a7e05e90347))
+    (pin "1" (uuid 5fd95c3b-bc95-409e-90da-320804b5b8cb))
+    (pin "2" (uuid 9ee84fbc-d7d5-4a32-88e9-a74b636b1279))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
@@ -5339,8 +5343,8 @@
     (property "LCSC Part #" "C96446" (at 114.3 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c63cdb9e-d053-464f-86d4-829e0fcc59df))
-    (pin "2" (uuid a033edc1-ca9a-4a9c-9886-44d267acc4cc))
+    (pin "1" (uuid bc702731-bb13-482d-86fa-b765d76b70c7))
+    (pin "2" (uuid e91f0bef-a9d7-451d-bcd9-09259d4efef8))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
@@ -5436,8 +5440,8 @@
     (property "LCSC Part #" "C25741" (at 233.68 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fee5644d-17bb-49e2-b37b-4f4f5ca27c78))
-    (pin "2" (uuid e955b93b-91cc-43ba-83bd-cc97a6cc2b3c))
+    (pin "1" (uuid 06916026-fba5-4531-93d5-338ecaba5bfa))
+    (pin "2" (uuid c360f417-a018-4cd5-93fa-eed00e985e34))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5496,8 +5500,8 @@
     (property "LCSC Part #" "C25741" (at 33.02 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c1e29360-4616-4b57-baae-b10f5e4f2d1e))
-    (pin "2" (uuid fa59a5c3-dbbe-4de3-8018-a2016a1c3211))
+    (pin "1" (uuid c1b73fdf-c796-4c2c-9104-b1b9086f3219))
+    (pin "2" (uuid 144db711-85ee-4fec-b3f8-9e42b5964df4))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5544,9 +5548,9 @@
     (property "LCSC Part #" "C8545" (at 213.36 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1ecc4611-00d8-4eea-a19a-456502b74d20))
-    (pin "2" (uuid a8da3684-7d24-487b-9db6-17b864e5231c))
-    (pin "3" (uuid 5f9c3c10-11ee-494f-a592-738fca677464))
+    (pin "1" (uuid 36901fb6-20d7-462d-a3a0-ab6f5ffd8128))
+    (pin "2" (uuid 8e8edb3b-583e-4482-b2fc-99cb828dff24))
+    (pin "3" (uuid e91c96b2-e669-4a1a-973f-cadae8099a65))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5580,7 +5584,7 @@
     (property "Part Number" "-" (at 163.83 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dbc1d19f-4181-48a9-871b-d2ad64862910))
+    (pin "1" (uuid 842a874c-654f-4e47-bc61-1e1d7954683a))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5649,7 +5653,7 @@
     (property "Part Number" "-" (at 110.49 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 89746235-e845-49cd-9bd3-4c778ec0114d))
+    (pin "1" (uuid a018d510-7af4-479e-96a7-083012d69246))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5726,8 +5730,8 @@
     (property "LCSC Part #" "C307331" (at 140.97 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 47cfdee1-f900-454d-8bc7-6629d4d44cc2))
-    (pin "2" (uuid 3fea3836-1c96-4fe5-87f2-a6c833ccc6f3))
+    (pin "1" (uuid 3f3713c4-3ed5-4435-9a44-4e86ce8fa578))
+    (pin "2" (uuid 545d6e28-aca3-4fde-9f3a-c7cdbc326a30))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5821,8 +5825,8 @@
     (property "LCSC Part #" "C307331" (at 123.19 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 55fb8752-fa96-4f9b-b19e-adc7619db7ac))
-    (pin "2" (uuid 95f2c7b2-d4fa-43b2-bdc4-7ac7883b4a53))
+    (pin "1" (uuid 8b38b0db-4ff8-427c-8f6a-c5b642f094c0))
+    (pin "2" (uuid 1275b9b1-24a4-42be-af0f-e1a0e6940279))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5875,8 +5879,8 @@
     (property "LCSC Part #" "C318884" (at 85.09 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f7757744-af11-43b1-ae79-e45e1193213c))
-    (pin "2" (uuid 5fc54bd8-c788-4f10-a998-b77fbda5f87c))
+    (pin "1" (uuid 59fbd165-c1c8-41e0-8aba-579b8f8b07c6))
+    (pin "2" (uuid f0b26dbc-08f9-4bee-82b6-e608a51e2923))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5923,8 +5927,8 @@
     (property "LCSC Part #" "C115962" (at 161.29 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 56c0153d-4229-4283-bfbc-9ac26b08d3f0))
-    (pin "2" (uuid 9cfbb939-34ef-40cd-b9ab-072ad91e43ab))
+    (pin "1" (uuid ffe1ba91-d69f-42a0-a4c0-02be63c89d73))
+    (pin "2" (uuid 2ca4142b-0810-4c1b-9219-c5618bf3bee5))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
@@ -5968,8 +5972,8 @@
     (property "Part Number" "-" (at 186.69 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid eefb9241-3fa6-4581-aa17-8bc18090e6a0))
-    (pin "2" (uuid 6107f650-759d-4b4d-9eb3-e3c1b18a23e9))
+    (pin "1" (uuid d54fbcdd-7c0a-4c7a-adc6-0dcfc92d5527))
+    (pin "2" (uuid ea8039d0-3838-4b99-bf66-c9c080d43c57))
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/d67cb9b8-3550-4a9a-a119-4a7c3ea5cb86"
