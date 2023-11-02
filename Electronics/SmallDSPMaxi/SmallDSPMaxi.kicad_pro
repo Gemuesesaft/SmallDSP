@@ -440,14 +440,6 @@
       "version": 3
     },
     "net_colors": {
-      "/BCLK_In0": "rgb(0, 255, 0)",
-      "/BCLK_In1": "rgb(0, 255, 0)",
-      "/BCLK_In2": "rgb(0, 255, 0)",
-      "/BCLK_In3": "rgb(0, 255, 0)",
-      "/BCLK_Out0": "rgb(0, 255, 0)",
-      "/BCLK_Out1": "rgb(0, 255, 0)",
-      "/BCLK_Out2": "rgb(0, 255, 0)",
-      "/BCLK_Out3": "rgb(0, 255, 0)",
       "/Codecs 1-4/In L4+": "rgb(0, 255, 0)",
       "/Codecs 1-4/In L5+": "rgb(0, 255, 0)",
       "/Codecs 1-4/In L6+": "rgb(255, 0, 255)",
@@ -457,23 +449,7 @@
       "/Codecs 1-4/In R5+": "rgb(255, 0, 255)",
       "/Codecs 1-4/In R6+": "rgb(255, 0, 255)",
       "/Codecs 1-4/In R7+": "rgb(0, 255, 0)",
-      "/LRCK_In0": "rgb(0, 255, 0)",
-      "/LRCK_In1": "rgb(0, 255, 0)",
-      "/LRCK_In2": "rgb(0, 255, 0)",
-      "/LRCK_In3": "rgb(0, 255, 0)",
-      "/LRCK_Out0": "rgb(0, 255, 0)",
-      "/LRCK_Out1": "rgb(0, 255, 0)",
-      "/LRCK_Out2": "rgb(0, 255, 0)",
-      "/LRCK_Out3": "rgb(0, 255, 0)",
       "/MCLK": "rgb(0, 255, 0)",
-      "/SDATA_In0": "rgb(0, 255, 0)",
-      "/SDATA_In1": "rgb(0, 255, 0)",
-      "/SDATA_In2": "rgb(0, 255, 0)",
-      "/SDATA_In3": "rgb(0, 255, 0)",
-      "/SDATA_Out0": "rgb(0, 255, 0)",
-      "/SDATA_Out1": "rgb(0, 255, 0)",
-      "/SDATA_Out2": "rgb(0, 255, 0)",
-      "/SDATA_Out3": "rgb(0, 255, 0)",
       "Net-(U14-PB6{slash}USART1_TX)": "rgb(0, 255, 0)",
       "Net-(U14-PB7{slash}USART1_RX)": "rgb(0, 255, 0)",
       "Net-(U1A-PLLFlt)": "rgb(255, 0, 255)",
@@ -554,6 +530,10 @@
     [
       "4d9b9490-10af-4217-8f51-0bf6380e804c",
       "Decoupling"
+    ],
+    [
+      "31216c34-c913-473d-81bf-549ca7aee41d",
+      "Clock Distribution"
     ],
     [
       "dd5e018d-231f-4028-b7ad-f9ad235275ae",
