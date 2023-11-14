@@ -6,7 +6,7 @@
 
   (title_block
     (title "SmallDSP Maxi")
-    (date "2023-11-05")
+    (date "2023-11-10")
     (rev "1.0")
     (company "Till Heuer")
   )
@@ -281,6 +281,8 @@
   )
 
 
+  (no_connect (at 152.4 86.36) (uuid 292d76a1-092a-41ee-916c-bf012212a98c))
+
   (wire (pts (xy 152.4 93.98) (xy 156.21 93.98))
     (stroke (width 0) (type default))
     (uuid 0b51c47e-afc4-4848-9a6a-88d0c91c5338)
@@ -309,10 +311,6 @@
     (stroke (width 0) (type default))
     (uuid 2abef83f-d873-43c8-aef0-55c70ea3a6ae)
   )
-  (wire (pts (xy 161.29 86.36) (xy 166.37 86.36))
-    (stroke (width 0) (type default))
-    (uuid 31fa9545-7c66-4a39-aef0-1724bc97b85d)
-  )
   (wire (pts (xy 152.4 104.14) (xy 156.21 104.14))
     (stroke (width 0) (type default))
     (uuid 3d5c5694-d82f-4d75-9ab2-7113c39b7cbd)
@@ -324,10 +322,6 @@
   (wire (pts (xy 161.29 83.82) (xy 166.37 83.82))
     (stroke (width 0) (type default))
     (uuid 50c87c7a-5894-4286-b952-84cfecdc76ed)
-  )
-  (wire (pts (xy 152.4 86.36) (xy 156.21 86.36))
-    (stroke (width 0) (type default))
-    (uuid 5a64a4f4-85da-4105-a1ad-72a8790a2065)
   )
   (wire (pts (xy 152.4 101.6) (xy 156.21 101.6))
     (stroke (width 0) (type default))
@@ -435,10 +429,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 5a5bde49-a5ce-4c54-8e03-d12241dfe8a0)
   )
-  (hierarchical_label "MCLK Out 9" (shape output) (at 166.37 86.36 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid adbc1dee-76d7-466f-a6a0-9f80921e5650)
-  )
   (hierarchical_label "MCLK Out 2" (shape output) (at 166.37 93.98 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid ba97b1e4-fedb-4384-9ab7-e85452355c77)
@@ -463,7 +453,7 @@
   (symbol (lib_id "Device:R_Small") (at 109.22 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0450e9bd-cd99-4fc1-940e-fcc07b480433)
-    (property "Reference" "R31" (at 110.7186 78.7979 0)
+    (property "Reference" "R?" (at 110.7186 78.7979 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 110.7186 81.2221 0)
@@ -510,10 +500,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R31") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R79") (unit 1)
+          (reference "R48") (unit 1)
         )
       )
     )
@@ -522,7 +512,7 @@
   (symbol (lib_id "1_Project_Symbols:PL123-09OC") (at 138.43 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0d9e0b63-d385-412b-83f6-8f1c73dcb726)
-    (property "Reference" "U15" (at 140.803 73.66 0)
+    (property "Reference" "U6" (at 140.803 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "PL123-09OC" (at 140.803 76.2 0)
@@ -553,7 +543,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "U15") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
     )
@@ -562,7 +552,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.75 81.28 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 195a9a88-bc95-4465-826c-5d0880e13d1e)
-    (property "Reference" "R16" (at 154.94 80.01 90)
+    (property "Reference" "R?" (at 154.94 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "33R" (at 163.83 80.01 90)
@@ -609,10 +599,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R16") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R81") (unit 1)
+          (reference "R49") (unit 1)
         )
       )
     )
@@ -621,7 +611,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.75 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1aca95cb-f358-451c-aa32-5b40bce8e7f9)
-    (property "Reference" "R18" (at 154.94 105.41 90)
+    (property "Reference" "R?" (at 154.94 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "33R" (at 163.83 105.41 90)
@@ -668,10 +658,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R18") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R87") (unit 1)
+          (reference "R56") (unit 1)
         )
       )
     )
@@ -680,7 +670,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.75 88.9 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2447ea07-9ae5-42fd-8def-df66fe9c8e00)
-    (property "Reference" "R18" (at 154.94 87.63 90)
+    (property "Reference" "R?" (at 154.94 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "33R" (at 163.83 87.63 90)
@@ -727,10 +717,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R18") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R88") (unit 1)
+          (reference "R51") (unit 1)
         )
       )
     )
@@ -739,7 +729,7 @@
   (symbol (lib_id "power:GND") (at 138.43 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2dd5f106-d3b1-44d1-a2f0-33c95dcdee74)
-    (property "Reference" "#PWR0374" (at 138.43 119.38 0)
+    (property "Reference" "#PWR0131" (at 138.43 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 138.43 118.11 0)
@@ -755,7 +745,7 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0374") (unit 1)
+          (reference "#PWR0131") (unit 1)
         )
       )
     )
@@ -764,7 +754,7 @@
   (symbol (lib_id "power:GND") (at 158.75 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3a528e8f-94d8-4dd8-bc59-7f05cf0c9481)
-    (property "Reference" "#PWR051" (at 158.75 74.93 0)
+    (property "Reference" "#PWR?" (at 158.75 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 158.75 72.39 0)
@@ -780,10 +770,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0377") (unit 1)
+          (reference "#PWR0135") (unit 1)
         )
       )
     )
@@ -792,7 +782,7 @@
   (symbol (lib_id "Device:C_Small") (at 167.64 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ac9a886-3296-4aad-b320-42c9dcf8b95a)
-    (property "Reference" "C8" (at 170.18 63.5 0)
+    (property "Reference" "C?" (at 170.18 63.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 170.18 66.04 0)
@@ -839,13 +829,13 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "C8") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/4d9b9490-10af-4217-8f51-0bf6380e804c"
           (reference "C?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "C115") (unit 1)
+          (reference "C45") (unit 1)
         )
       )
     )
@@ -854,7 +844,7 @@
   (symbol (lib_id "Device:R_Small") (at 102.87 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3bfd73c2-d262-47b1-a009-0521bf8d1fc5)
-    (property "Reference" "R31" (at 104.3686 78.7979 0)
+    (property "Reference" "R?" (at 104.3686 78.7979 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 104.3686 81.2221 0)
@@ -901,10 +891,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R31") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R80") (unit 1)
+          (reference "R47") (unit 1)
         )
       )
     )
@@ -913,7 +903,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.75 104.14 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 44e0617c-964b-491a-8976-705322c162f5)
-    (property "Reference" "R18" (at 154.94 102.87 90)
+    (property "Reference" "R?" (at 154.94 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "33R" (at 163.83 102.87 90)
@@ -960,10 +950,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R18") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R86") (unit 1)
+          (reference "R55") (unit 1)
         )
       )
     )
@@ -972,7 +962,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.75 101.6 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4e5cd772-b268-4863-8154-529dc11e7468)
-    (property "Reference" "R17" (at 154.94 100.33 90)
+    (property "Reference" "R?" (at 154.94 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "33R" (at 163.83 100.33 90)
@@ -1019,10 +1009,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R17") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R85") (unit 1)
+          (reference "R54") (unit 1)
         )
       )
     )
@@ -1031,7 +1021,7 @@
   (symbol (lib_id "power:GND") (at 167.64 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 601d66ad-19dc-420e-a2b8-3dffdb52bca6)
-    (property "Reference" "#PWR056" (at 167.64 74.93 0)
+    (property "Reference" "#PWR?" (at 167.64 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 72.39 0)
@@ -1047,13 +1037,13 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/4d9b9490-10af-4217-8f51-0bf6380e804c"
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0379") (unit 1)
+          (reference "#PWR0137") (unit 1)
         )
       )
     )
@@ -1062,7 +1052,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.75 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 67ee0dee-e50a-4120-a8c1-741fa3395937)
-    (property "Reference" "R16" (at 154.94 97.79 90)
+    (property "Reference" "R?" (at 154.94 97.79 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "33R" (at 163.83 97.79 90)
@@ -1109,10 +1099,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R16") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R84") (unit 1)
+          (reference "R53") (unit 1)
         )
       )
     )
@@ -1121,7 +1111,7 @@
   (symbol (lib_id "Device:C_Small") (at 149.86 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6e680c49-e45f-46a2-afee-5d503050d6bb)
-    (property "Reference" "C5" (at 152.1841 63.5642 0)
+    (property "Reference" "C?" (at 152.1841 63.5642 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 152.1841 65.9884 0)
@@ -1168,69 +1158,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "C5") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "C116") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 158.75 86.36 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7f91109f-39b8-49d7-bbfd-a51c74e5f964)
-    (property "Reference" "R18" (at 154.94 85.09 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "33R" (at 163.83 85.09 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Notes" "" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Voltage" "" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Assembling" "X" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Number" "0402WGF330JTCE" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Power" "62.5mW" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Current" "" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Tolerance" "1%" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part #" "C25105" (at 158.75 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 448eba1e-102d-4de3-8004-db34c3568337))
-    (pin "2" (uuid 50fe7403-2c2e-4ba2-80a1-b6246a6b16fc))
-    (instances
-      (project "SmallDSPMaxi"
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R18") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R83") (unit 1)
+          (reference "C43") (unit 1)
         )
       )
     )
@@ -1239,7 +1170,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.75 93.98 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83841b05-89ef-4455-ad95-4c8eb85ec144)
-    (property "Reference" "R18" (at 154.94 92.71 90)
+    (property "Reference" "R?" (at 154.94 92.71 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "33R" (at 163.83 92.71 90)
@@ -1286,10 +1217,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R18") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R89") (unit 1)
+          (reference "R52") (unit 1)
         )
       )
     )
@@ -1298,7 +1229,7 @@
   (symbol (lib_id "power:+3V3") (at 102.87 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f3c6ca4-a5ab-4b2c-9c7c-dbb0cd4d6f4d)
-    (property "Reference" "#PWR023" (at 102.87 80.01 0)
+    (property "Reference" "#PWR?" (at 102.87 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 102.87 72.39 0)
@@ -1314,10 +1245,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0383") (unit 1)
+          (reference "#PWR0128") (unit 1)
         )
       )
     )
@@ -1326,7 +1257,7 @@
   (symbol (lib_id "power:+3V3") (at 109.22 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 94a30651-2928-406b-b3f1-36f20472c2a6)
-    (property "Reference" "#PWR023" (at 109.22 80.01 0)
+    (property "Reference" "#PWR?" (at 109.22 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 109.22 72.39 0)
@@ -1342,10 +1273,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0382") (unit 1)
+          (reference "#PWR0129") (unit 1)
         )
       )
     )
@@ -1354,7 +1285,7 @@
   (symbol (lib_id "power:+3V3") (at 149.86 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 960aa897-bd64-45f1-8f17-b940976c9ace)
-    (property "Reference" "#PWR050" (at 149.86 64.77 0)
+    (property "Reference" "#PWR?" (at 149.86 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 149.86 57.15 0)
@@ -1370,10 +1301,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0380") (unit 1)
+          (reference "#PWR0132") (unit 1)
         )
       )
     )
@@ -1382,7 +1313,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.75 83.82 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 976597d3-944f-4d64-af8e-6dfb49a26bd4)
-    (property "Reference" "R17" (at 154.94 82.55 90)
+    (property "Reference" "R?" (at 154.94 82.55 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "33R" (at 163.83 82.55 90)
@@ -1429,10 +1360,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "R17") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "R82") (unit 1)
+          (reference "R50") (unit 1)
         )
       )
     )
@@ -1441,7 +1372,7 @@
   (symbol (lib_id "Device:C_Small") (at 158.75 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cd40ab99-a27a-4282-88ff-ab2e62900088)
-    (property "Reference" "C5" (at 161.0741 63.5642 0)
+    (property "Reference" "C?" (at 161.0741 63.5642 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 161.0741 65.9884 0)
@@ -1488,10 +1419,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "C5") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "C114") (unit 1)
+          (reference "C44") (unit 1)
         )
       )
     )
@@ -1500,7 +1431,7 @@
   (symbol (lib_id "power:+3V3") (at 138.43 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d862b640-00be-4054-882a-f842255fb1e0)
-    (property "Reference" "#PWR015" (at 138.43 78.74 0)
+    (property "Reference" "#PWR?" (at 138.43 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 138.43 71.12 0)
@@ -1516,10 +1447,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0375") (unit 1)
+          (reference "#PWR0130") (unit 1)
         )
       )
     )
@@ -1528,7 +1459,7 @@
   (symbol (lib_id "power:+3V3") (at 158.75 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid db9c1378-9bcb-498a-a824-7605e59ce52a)
-    (property "Reference" "#PWR050" (at 158.75 64.77 0)
+    (property "Reference" "#PWR?" (at 158.75 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 158.75 57.15 0)
@@ -1544,10 +1475,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0376") (unit 1)
+          (reference "#PWR0134") (unit 1)
         )
       )
     )
@@ -1556,7 +1487,7 @@
   (symbol (lib_id "power:+3V3") (at 167.64 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e8dc924d-54be-478d-8b2a-0d5f27c9e413)
-    (property "Reference" "#PWR055" (at 167.64 64.77 0)
+    (property "Reference" "#PWR?" (at 167.64 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 167.64 57.15 0)
@@ -1572,13 +1503,13 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/4d9b9490-10af-4217-8f51-0bf6380e804c"
           (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0378") (unit 1)
+          (reference "#PWR0136") (unit 1)
         )
       )
     )
@@ -1587,7 +1518,7 @@
   (symbol (lib_id "power:GND") (at 149.86 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f79294ff-77fc-483d-a9b8-238a0151f667)
-    (property "Reference" "#PWR051" (at 149.86 74.93 0)
+    (property "Reference" "#PWR?" (at 149.86 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.86 72.39 0)
@@ -1603,10 +1534,10 @@
     (instances
       (project "SmallDSPMaxi"
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/31216c34-c913-473d-81bf-549ca7aee41d"
-          (reference "#PWR0381") (unit 1)
+          (reference "#PWR0133") (unit 1)
         )
       )
     )

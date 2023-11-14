@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -97,8 +97,8 @@
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
-        "text_thickness": "warning",
+        "text_height": "ignore",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -450,8 +450,6 @@
       "/Codecs 1-4/In R6+": "rgb(255, 0, 255)",
       "/Codecs 1-4/In R7+": "rgb(0, 255, 0)",
       "/MCLK": "rgb(0, 255, 0)",
-      "Net-(U14-PB6{slash}USART1_TX)": "rgb(0, 255, 0)",
-      "Net-(U14-PB7{slash}USART1_RX)": "rgb(0, 255, 0)",
       "Net-(U1A-PLLFlt)": "rgb(255, 0, 255)",
       "Net-(U1A-Xtal_In{slash}MCLK_In)": "rgb(255, 0, 255)",
       "Net-(U1A-Xtal_Out)": "rgb(255, 0, 255)",
@@ -466,9 +464,7 @@
       "Net-(U1C-SDATA_Out0)": "rgb(0, 255, 0)",
       "Net-(U1C-SDATA_Out1)": "rgb(0, 255, 0)",
       "Net-(U1C-SDATA_Out2)": "rgb(0, 255, 0)",
-      "Net-(U1C-SDATA_Out3)": "rgb(0, 255, 0)",
-      "unconnected-(U14-PC13-Pad2)": "rgb(255, 0, 255)",
-      "unconnected-(U14-PC14{slash}XTAL32_In-Pad3)": "rgb(0, 255, 0)"
+      "Net-(U1C-SDATA_Out3)": "rgb(0, 255, 0)"
     },
     "netclass_assignments": null,
     "netclass_patterns": []
