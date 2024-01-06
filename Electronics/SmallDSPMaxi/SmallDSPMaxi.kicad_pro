@@ -449,22 +449,7 @@
       "/Codecs 1-4/In R5+": "rgb(255, 0, 255)",
       "/Codecs 1-4/In R6+": "rgb(255, 0, 255)",
       "/Codecs 1-4/In R7+": "rgb(0, 255, 0)",
-      "/MCLK": "rgb(0, 255, 0)",
-      "Net-(U1A-PLLFlt)": "rgb(255, 0, 255)",
-      "Net-(U1A-Xtal_In{slash}MCLK_In)": "rgb(255, 0, 255)",
-      "Net-(U1A-Xtal_Out)": "rgb(255, 0, 255)",
-      "Net-(U1C-BCLK_Out0)": "rgb(0, 255, 0)",
-      "Net-(U1C-BCLK_Out1)": "rgb(0, 255, 0)",
-      "Net-(U1C-BCLK_Out2)": "rgb(0, 255, 0)",
-      "Net-(U1C-BCLK_Out3)": "rgb(0, 255, 0)",
-      "Net-(U1C-LRCK_Out0{slash}GPIO4)": "rgb(0, 255, 0)",
-      "Net-(U1C-LRCK_Out1{slash}GPIO5)": "rgb(0, 255, 0)",
-      "Net-(U1C-LRCK_Out2{slash}GPIO8)": "rgb(0, 255, 0)",
-      "Net-(U1C-LRCK_Out3{slash}GPIO9)": "rgb(0, 255, 0)",
-      "Net-(U1C-SDATA_Out0)": "rgb(0, 255, 0)",
-      "Net-(U1C-SDATA_Out1)": "rgb(0, 255, 0)",
-      "Net-(U1C-SDATA_Out2)": "rgb(0, 255, 0)",
-      "Net-(U1C-SDATA_Out3)": "rgb(0, 255, 0)"
+      "Net-(C27-Pad1)": "rgb(0, 255, 0)"
     },
     "netclass_assignments": null,
     "netclass_patterns": []

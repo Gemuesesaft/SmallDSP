@@ -6,7 +6,7 @@
 
   (title_block
     (title "Unbalanced Analog Input Board for SmallDSP")
-    (date "2023-11-06")
+    (date "2024-01-06")
     (rev "1.0")
     (company "Till Heuer")
   )
@@ -3216,117 +3216,6 @@
     )
   )
 
-  (symbol (lib_id "Device:D_TVS") (at 81.28 134.62 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0657cff7-4c57-4f85-a385-4bc507baff3b)
-    (property "Reference" "D4" (at 83.82 138.43 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "P6SMB6.8CA" (at 78.74 142.24 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Diode_SMD:D_SMB" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Notes" "" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Voltage" "" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Assembling" "X" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Power" "" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Brightking" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Number" "P6SMB6.8CA/TR13" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Current" "" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part #" "C78395" (at 81.28 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e4523faa-b43c-40bf-ac1a-42fb5089db6d))
-    (pin "2" (uuid d58b91ca-24a4-448a-99b0-a5c28c1d4020))
-    (instances
-      (project "AudioInputPCB_Unbalanced"
-        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
-          (reference "D4") (unit 1)
-        )
-      )
-      (project "SmallDSPMaxi"
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-      )
-      (project "Analog_Input"
-        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
-          (reference "D?") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:C_Small") (at 81.28 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0703afcc-1666-48b3-9049-c2457eace753)
@@ -5172,10 +5061,10 @@
     (property "Reference" "D1" (at 83.82 49.53 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "P6SMB6.8CA" (at 78.74 57.15 0)
+    (property "Value" "H5VL10B" (at 78.74 57.15 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Diode_SMD:D_SMB" (at 81.28 53.34 0)
+    (property "Footprint" "1_Project_Footprints:DFN1006-2" (at 81.28 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 81.28 53.34 0)
@@ -5196,16 +5085,16 @@
     (property "Rated Power" "" (at 81.28 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer" "Brightking" (at 81.28 53.34 0)
+    (property "Manufacturer" "hongjiacheng" (at 81.28 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "P6SMB6.8CA/TR13" (at 81.28 53.34 0)
+    (property "Part Number" "H5VL10B" (at 81.28 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Rated Current" "" (at 81.28 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC Part #" "C78395" (at 81.28 53.34 0)
+    (property "LCSC Part #" "C7420372" (at 81.28 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 37b0fdc6-f277-4f7b-9ca4-d0d164662675))
@@ -5753,6 +5642,117 @@
     )
   )
 
+  (symbol (lib_id "Device:D_TVS") (at 81.28 124.46 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2a66c92e-3be4-4109-b88f-407127263de6)
+    (property "Reference" "D3" (at 83.82 120.65 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "H5VL10B" (at 78.74 128.27 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "1_Project_Footprints:DFN1006-2" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Dielectric" "" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Notes" "" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Voltage" "" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Assembling" "X" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Power" "" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "hongjiacheng" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Number" "H5VL10B" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Current" "" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C7420372" (at 81.28 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8d2b5af5-7d77-4d91-8ac0-314f7b282a65))
+    (pin "2" (uuid 049ae16e-8f7e-403f-a30e-192ae01dbcab))
+    (instances
+      (project "AudioInputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "D3") (unit 1)
+        )
+      )
+      (project "SmallDSPMaxi"
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+      )
+      (project "Analog_Input"
+        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
+          (reference "D?") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:PWR_FLAG") (at 15.24 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2ad58fae-aa57-4f70-84e6-54ed17b54dae)
@@ -5773,6 +5773,117 @@
       (project "AudioInputPCB_Unbalanced"
         (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
           (reference "#FLG01") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:D_TVS") (at 196.85 63.5 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2ade4400-8277-4090-b2c6-7ef82ef52e0e)
+    (property "Reference" "D14" (at 199.39 59.69 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "H5VL10B" (at 194.31 67.31 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "1_Project_Footprints:DFN1006-2" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Dielectric" "" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Notes" "" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Voltage" "" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Assembling" "X" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Power" "" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "hongjiacheng" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Number" "H5VL10B" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Current" "" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C7420372" (at 196.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d435d1c9-d224-42b0-88da-3b453d195848))
+    (pin "2" (uuid 77b1180b-db81-4fd8-876e-a3c5398a5073))
+    (instances
+      (project "AudioInputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "D14") (unit 1)
+        )
+      )
+      (project "SmallDSPMaxi"
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+      )
+      (project "Analog_Input"
+        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -8271,54 +8382,54 @@
     )
   )
 
-  (symbol (lib_id "Device:D_TVS") (at 196.85 63.5 270) (unit 1)
+  (symbol (lib_id "Device:D_TVS") (at 196.85 53.34 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4d3bc38f-fb41-44cd-ac81-cfcce20ec2a1)
-    (property "Reference" "D14" (at 200.66 67.31 90)
+    (uuid 49a49a04-0349-4f97-992f-247efb566388)
+    (property "Reference" "D13" (at 199.39 49.53 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "P6SMB6.8CA" (at 194.31 71.12 0)
+    (property "Value" "H5VL10B" (at 194.31 57.15 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Diode_SMD:D_SMB" (at 196.85 63.5 0)
+    (property "Footprint" "1_Project_Footprints:DFN1006-2" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 196.85 63.5 0)
+    (property "Datasheet" "~" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Dielectric" "" (at 196.85 63.5 0)
+    (property "Dielectric" "" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Notes" "" (at 196.85 63.5 0)
+    (property "Notes" "" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Rated Voltage" "" (at 196.85 63.5 0)
+    (property "Rated Voltage" "" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Assembling" "X" (at 196.85 63.5 0)
+    (property "Assembling" "X" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Rated Power" "" (at 196.85 63.5 0)
+    (property "Rated Power" "" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer" "Brightking" (at 196.85 63.5 0)
+    (property "Manufacturer" "hongjiacheng" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "P6SMB6.8CA/TR13" (at 196.85 63.5 0)
+    (property "Part Number" "H5VL10B" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Rated Current" "" (at 196.85 63.5 0)
+    (property "Rated Current" "" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC Part #" "C78395" (at 196.85 63.5 0)
+    (property "LCSC Part #" "C7420372" (at 196.85 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 855587fb-5abe-4ffa-81fc-949e68695a6d))
-    (pin "2" (uuid 76d8282b-a8e1-4e32-82e4-19b114523345))
+    (pin "1" (uuid 55cbf232-90c2-4335-9dc4-ee16a4a70b65))
+    (pin "2" (uuid 0146dcf8-084d-4e06-b19e-a48df7ae348d))
     (instances
       (project "AudioInputPCB_Unbalanced"
         (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
-          (reference "D14") (unit 1)
+          (reference "D13") (unit 1)
         )
       )
       (project "SmallDSPMaxi"
@@ -10013,6 +10124,117 @@
     )
   )
 
+  (symbol (lib_id "Device:D_TVS") (at 81.28 134.62 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 69c7c277-0b1c-43dd-8d35-9621acdb00db)
+    (property "Reference" "D4" (at 83.82 130.81 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "H5VL10B" (at 78.74 138.43 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "1_Project_Footprints:DFN1006-2" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Dielectric" "" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Notes" "" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Voltage" "" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Assembling" "X" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Power" "" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "hongjiacheng" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Number" "H5VL10B" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Current" "" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C7420372" (at 81.28 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7775b051-ccce-41df-8a25-3ac45a3bbd81))
+    (pin "2" (uuid 6acdc4e8-af9b-4cd7-a676-cbf763b02edc))
+    (instances
+      (project "AudioInputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "D4") (unit 1)
+        )
+      )
+      (project "SmallDSPMaxi"
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+      )
+      (project "Analog_Input"
+        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
+          (reference "D?") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 252.73 24.13 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b8dd11d-d220-440f-823e-ddabbd4ffca1)
@@ -10438,117 +10660,6 @@
     )
   )
 
-  (symbol (lib_id "Device:D_TVS") (at 81.28 63.5 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6c859f30-ab2e-40e7-8925-d8a69f2430c6)
-    (property "Reference" "D2" (at 83.82 67.31 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "P6SMB6.8CA" (at 78.74 71.12 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Diode_SMD:D_SMB" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Notes" "" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Voltage" "" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Assembling" "X" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Power" "" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Brightking" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Number" "P6SMB6.8CA/TR13" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Current" "" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part #" "C78395" (at 81.28 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2a43d5e6-90f1-4be9-b89e-c4d2abe7c7c2))
-    (pin "2" (uuid 63d3e7d6-ab94-47ec-b45f-73a609796820))
-    (instances
-      (project "AudioInputPCB_Unbalanced"
-        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
-          (reference "D2") (unit 1)
-        )
-      )
-      (project "SmallDSPMaxi"
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-      )
-      (project "Analog_Input"
-        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
-          (reference "D?") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 270.51 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6caa92ef-fe78-4675-b9b0-0204a7f3b4fe)
@@ -10862,117 +10973,6 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "#PWR?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_TVS") (at 196.85 124.46 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6ed42b99-1988-4079-8358-1b07bd39bb52)
-    (property "Reference" "D15" (at 200.66 120.65 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "P6SMB6.8CA" (at 194.31 128.27 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Diode_SMD:D_SMB" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Notes" "" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Voltage" "" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Assembling" "X" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Power" "" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Brightking" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Number" "P6SMB6.8CA/TR13" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Current" "" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part #" "C78395" (at 196.85 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4c2a0daf-7b04-47c1-b6ac-ed86329e7da8))
-    (pin "2" (uuid c69f4fde-f2bc-4b3e-b041-55f4f7e2ad13))
-    (instances
-      (project "AudioInputPCB_Unbalanced"
-        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
-          (reference "D15") (unit 1)
-        )
-      )
-      (project "SmallDSPMaxi"
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-      )
-      (project "Analog_Input"
-        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
-          (reference "D?") (unit 1)
         )
       )
     )
@@ -11994,117 +11994,6 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "#PWR?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_TVS") (at 81.28 124.46 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7f9c298a-94c2-4a7e-8ed6-05d37c24c303)
-    (property "Reference" "D3" (at 83.82 120.65 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "P6SMB6.8CA" (at 78.74 128.27 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Diode_SMD:D_SMB" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Notes" "" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Voltage" "" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Assembling" "X" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Power" "" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Brightking" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Number" "P6SMB6.8CA/TR13" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Current" "" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part #" "C78395" (at 81.28 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 88dbafec-b651-41d9-820d-373ae5bce319))
-    (pin "2" (uuid 3d65965a-7944-4e23-9863-e59bfa7aa277))
-    (instances
-      (project "AudioInputPCB_Unbalanced"
-        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
-          (reference "D3") (unit 1)
-        )
-      )
-      (project "SmallDSPMaxi"
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-      )
-      (project "Analog_Input"
-        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
-          (reference "D?") (unit 1)
         )
       )
     )
@@ -13642,6 +13531,117 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:D_TVS") (at 196.85 124.46 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8bbe60b4-5efb-491d-aaca-31620cb9bfbb)
+    (property "Reference" "D15" (at 199.39 120.65 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "H5VL10B" (at 194.31 128.27 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "1_Project_Footprints:DFN1006-2" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Dielectric" "" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Notes" "" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Voltage" "" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Assembling" "X" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Power" "" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "hongjiacheng" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Number" "H5VL10B" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Current" "" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C7420372" (at 196.85 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3f8c12d3-e467-40e9-b5d3-085a155046d2))
+    (pin "2" (uuid bb48142a-1673-463c-9681-1e7e4148290d))
+    (instances
+      (project "AudioInputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "D15") (unit 1)
+        )
+      )
+      (project "SmallDSPMaxi"
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+      )
+      (project "Analog_Input"
+        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -15576,117 +15576,6 @@
     )
   )
 
-  (symbol (lib_id "Device:D_TVS") (at 196.85 134.62 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a6579a9e-d643-48d6-96fb-fd695cfb086b)
-    (property "Reference" "D16" (at 200.66 138.43 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "P6SMB6.8CA" (at 194.31 142.24 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Diode_SMD:D_SMB" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Notes" "" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Voltage" "" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Assembling" "X" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Power" "" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Brightking" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Number" "P6SMB6.8CA/TR13" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Current" "" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part #" "C78395" (at 196.85 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b722cdd9-eaf5-459c-8af1-d93b5c86e0d5))
-    (pin "2" (uuid d097a2ad-2538-41c6-ac98-e7412bbe2044))
-    (instances
-      (project "AudioInputPCB_Unbalanced"
-        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
-          (reference "D16") (unit 1)
-        )
-      )
-      (project "SmallDSPMaxi"
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-      )
-      (project "Analog_Input"
-        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
-          (reference "D?") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 95.25 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a88affa9-94ec-4f5e-8a42-e3c7be16d1af)
@@ -15997,6 +15886,117 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:D_TVS") (at 196.85 134.62 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid aec53042-70e7-46e2-921a-5b3a8aaa048d)
+    (property "Reference" "D16" (at 199.39 130.81 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "H5VL10B" (at 194.31 138.43 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "1_Project_Footprints:DFN1006-2" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Dielectric" "" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Notes" "" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Voltage" "" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Assembling" "X" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Power" "" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "hongjiacheng" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Number" "H5VL10B" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Current" "" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C7420372" (at 196.85 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c7b957d1-3712-46aa-8008-3c38bda09965))
+    (pin "2" (uuid b48e5bb0-8c31-48bd-87a8-0883dc30bcbe))
+    (instances
+      (project "AudioInputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "D16") (unit 1)
+        )
+      )
+      (project "SmallDSPMaxi"
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+      )
+      (project "Analog_Input"
+        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -19263,6 +19263,117 @@
     )
   )
 
+  (symbol (lib_id "Device:D_TVS") (at 81.28 63.5 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d390ecf3-9460-4671-b9a7-2d214f3eee4f)
+    (property "Reference" "D2" (at 83.82 59.69 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "H5VL10B" (at 78.74 67.31 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "1_Project_Footprints:DFN1006-2" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Dielectric" "" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Notes" "" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Voltage" "" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Assembling" "X" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Power" "" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "hongjiacheng" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Number" "H5VL10B" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Rated Current" "" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C7420372" (at 81.28 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 98f4177e-a37f-4ca6-b527-8c2411540cd7))
+    (pin "2" (uuid a76c5e7a-a22e-4fb2-822b-353efdfb1363))
+    (instances
+      (project "AudioInputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "D2") (unit 1)
+        )
+      )
+      (project "SmallDSPMaxi"
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
+          (reference "D?") (unit 1)
+        )
+        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
+          (reference "D?") (unit 1)
+        )
+      )
+      (project "Analog_Input"
+        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
+          (reference "D?") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C_Small") (at 270.51 85.09 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4e061c6-75a3-4a0a-aee2-5cbc626ff5c1)
@@ -20168,117 +20279,6 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "R?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_TVS") (at 196.85 53.34 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e01bb3c4-bdb9-4c6b-b55f-be6e3f4fa465)
-    (property "Reference" "D13" (at 200.66 49.53 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "P6SMB6.8CA" (at 194.31 57.15 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Diode_SMD:D_SMB" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Notes" "" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Voltage" "" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Assembling" "X" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Power" "" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Brightking" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Number" "P6SMB6.8CA/TR13" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Rated Current" "" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part #" "C78395" (at 196.85 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5013be07-196c-4c06-afb0-59c2022954db))
-    (pin "2" (uuid 29a96589-14e9-4936-acad-eff4ed3fba46))
-    (instances
-      (project "AudioInputPCB_Unbalanced"
-        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
-          (reference "D13") (unit 1)
-        )
-      )
-      (project "SmallDSPMaxi"
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/dd5e018d-231f-4028-b7ad-f9ad235275ae/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/1253eab4-5bda-4581-8d68-5c014d957b31"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/5bcd9d1b-57cb-43c7-961b-a404aae935c0"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/521b940f-973e-49d1-90b2-a6927519292d"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/aa16c2d8-1a41-4a12-92b0-6403f54aa78c"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/efca36fc-7087-4b06-8868-e1194715d971"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/06cb6cad-a0cd-40f9-ac59-dc56d2492321"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/9e69f06d-5218-49d9-8b72-74f1d362a505"
-          (reference "D?") (unit 1)
-        )
-        (path "/5f2729b5-edcd-4fbc-b3fb-44096724c941/e1e269a4-53ae-4bea-a427-d30f53cdee71/7220a81f-2883-49c6-bd2d-ed48f9c7ad93"
-          (reference "D?") (unit 1)
-        )
-      )
-      (project "Analog_Input"
-        (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
-          (reference "D?") (unit 1)
         )
       )
     )
