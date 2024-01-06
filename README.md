@@ -8,7 +8,8 @@ environment and pretty powerful for its price.
 
 Current status:
 - Dual: Rev 1.1: Layout finished, functionality has to be validated.
-- Maxi: Rev 1.0: Layout finished, functionality has to be validated.
+- Maxi: Rev 1.0: Layout finished, ,prototype ordered, 
+    functionality has to be validated.
 - Multi: Rev 1.0: Schematic unfinished.
 - Mini: Nothing done yet.
 - Micro: Nothing done yet.
@@ -52,11 +53,11 @@ much everything on itself. Although the DSP can act as a I2C or SPI master, I
 used ADCs and DAC that are configured directly by setting specific pins,
 because the usage of the I2C/SPI master feature an ADAU DSPs is, at least
 to my knowledge, not very user-friendly. Please correct me if I'm wrong there 
-I would very much like to know an easy way to use that feature.
-The Maxi is an exception in that, as it has a STM32 MCU and the PCB. That is 
+I would very much like to know an easy way to use this feature.
+The Maxi is an exception in that, as it has a STM32 MCU on board. That is 
 because the used Codecs are only controllable over I2C/SPI and are way cheaper
 than pin-controllable alternatives.
 
-A detailed documentation is planned but the current focus lies on finishing
+A detailed documentation is planned, but the current focus lies on finishing
 the PCBs and the testing of those. Detailed performance measurements will
 be published here as well, as soon as they are made.
