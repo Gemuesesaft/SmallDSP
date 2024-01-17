@@ -12,6 +12,33 @@
   )
 
   (lib_symbols
+    (symbol "1_Project_Symbols:Phase" (in_bom no) (on_board no)
+      (property "Reference" "S" (at 0 7.62 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "Phase" (at 0 7.62 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Footprint" "" (at 0 7.62 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 7.62 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Phase_0_1"
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy -0.635 0)
+            (xy 0 1.27)
+            (xy 0.635 0)
+            (xy 1.27 0)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+      )
+    )
     (symbol "Connector:Conn_Coaxial_x2" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 5.715 0)
         (effects (font (size 1.27 1.27)))
@@ -4418,6 +4445,30 @@
     )
   )
 
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 172.72 143.51 180) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 1d90143a-34d6-4fa4-b562-531e23c10a8a)
+    (property "Reference" "S16" (at 172.72 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 172.72 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 172.72 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 172.72 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S16") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 234.95 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1f890244-71ce-461f-b9dd-444b662a40e7)
@@ -4613,6 +4664,30 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "C?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 57.15 106.68 180) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 24af8475-54ac-4d7d-a390-b59a7803f420)
+    (property "Reference" "S11" (at 57.15 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 57.15 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 57.15 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 57.15 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S11") (unit 1)
         )
       )
     )
@@ -5725,6 +5800,30 @@
     )
   )
 
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 57.15 143.51 180) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 35791861-bcfb-4e01-8877-5d6867f4dc8e)
+    (property "Reference" "S12" (at 57.15 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 57.15 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 57.15 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 57.15 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S12") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 217.17 80.01 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 36068223-aa9f-47f6-a086-f06cc3b0348b)
@@ -6232,6 +6331,30 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "C?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 57.15 35.56 180) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 3f5c0a6e-cf54-446a-a371-43e698c49809)
+    (property "Reference" "S9" (at 57.15 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 57.15 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 57.15 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 57.15 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S9") (unit 1)
         )
       )
     )
@@ -7384,6 +7507,30 @@
     )
   )
 
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 250.19 113.03 0) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 4d12ef1a-933b-4c5a-902d-9edb39dc9ad1)
+    (property "Reference" "S7" (at 250.19 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 250.19 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 250.19 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 250.19 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S7") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 234.95 119.38 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d27f9a5-a96b-48e0-a006-5f4b84a593bd)
@@ -7501,6 +7648,30 @@
     )
   )
 
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 134.62 48.26 0) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 4dde42e8-4040-449c-a1eb-f180ce49e78c)
+    (property "Reference" "S1" (at 134.62 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 134.62 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 134.62 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 134.62 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S1") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:PWR_FLAG") (at 15.24 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4fd8d3f7-ffab-4459-86b5-97ad7c5116c0)
@@ -7521,6 +7692,30 @@
       (project "AudioOutputPCB_Unbalanced"
         (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
           (reference "#FLG01") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 134.62 113.03 0) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 56f1307e-a33f-443a-b546-ff8cf2c6d836)
+    (property "Reference" "S3" (at 134.62 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 134.62 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 134.62 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 134.62 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S3") (unit 1)
         )
       )
     )
@@ -8030,6 +8225,30 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "R?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 172.72 35.56 180) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 606d7711-c59c-4990-9576-c7d5a0c1dce0)
+    (property "Reference" "S13" (at 172.72 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 172.72 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 172.72 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 172.72 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S13") (unit 1)
         )
       )
     )
@@ -9098,6 +9317,30 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "R?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 134.62 119.38 0) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 6e95cef9-9aef-4901-9a75-6adc397592a5)
+    (property "Reference" "S4" (at 134.62 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 134.62 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 134.62 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 134.62 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S4") (unit 1)
         )
       )
     )
@@ -10950,6 +11193,30 @@
     )
   )
 
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 172.72 72.39 180) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid 881daf59-4cce-4d38-9bef-b3578acd1312)
+    (property "Reference" "S14" (at 172.72 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 172.72 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 172.72 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 172.72 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S14") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 125.73 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8895476a-cb85-412b-bc9b-8a059b2522ec)
@@ -12637,6 +12904,30 @@
     )
   )
 
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 250.19 119.38 0) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid a533c55f-99cd-478d-afce-defeac003ae9)
+    (property "Reference" "S8" (at 250.19 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 250.19 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 250.19 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 250.19 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S8") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C_Small") (at 63.5 148.59 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a759d8af-13d3-405b-87b5-0e0626e0a7d1)
@@ -13020,6 +13311,30 @@
       (project "AudioOutputPCB_Unbalanced"
         (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
           (reference "H2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 134.62 41.91 0) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid a974543d-ab63-485a-917b-485c5d5126d9)
+    (property "Reference" "S2" (at 134.62 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 134.62 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 134.62 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 134.62 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S2") (unit 1)
         )
       )
     )
@@ -17235,6 +17550,30 @@
     )
   )
 
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 57.15 72.39 180) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid e089b057-3bc9-432f-82d1-1128fd010f4a)
+    (property "Reference" "S10" (at 57.15 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 57.15 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 57.15 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 57.15 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S10") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:Opamp_Dual") (at 86.36 43.18 0) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e1a73c7e-9a68-4ff3-8424-006408a42f68)
@@ -17472,6 +17811,30 @@
     )
   )
 
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 250.19 41.91 0) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid e69dd3fc-7878-4c6c-aa39-cac56a7efe33)
+    (property "Reference" "S5" (at 250.19 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 250.19 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 250.19 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 250.19 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S5") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 234.95 156.21 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e8d2c0a6-656e-4e25-ace2-d749bd9aa9c6)
@@ -17584,6 +17947,54 @@
       (project "Analog_Input"
         (path "/78aee42b-2791-4072-9f7c-7887b174dfb1"
           (reference "R?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 172.72 106.68 180) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid e9271c46-ebbc-4315-9849-13640e9b4652)
+    (property "Reference" "S15" (at 172.72 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 172.72 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 172.72 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 172.72 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "1_Project_Symbols:Phase") (at 250.19 48.26 0) (unit 1)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
+    (uuid ec8e44f4-fc4b-4d9d-b54d-4d2ec3c25b6e)
+    (property "Reference" "S6" (at 250.19 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Phase" (at 250.19 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 250.19 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 250.19 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AudioOutputPCB_Unbalanced"
+        (path "/17188c6f-f81f-4113-81fa-be4890d4152c"
+          (reference "S6") (unit 1)
         )
       )
     )
