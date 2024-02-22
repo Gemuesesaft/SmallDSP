@@ -6,17 +6,7 @@
  * @brief   Headerfile for driver for AKM AK4619 4 channel audio codec.
  * @date 	Feb 20, 2024
  * @verbatim
- * Data sheet: https://www.akm.com/content/dam/documents/products/audio/audio-codec/ak4619vn/ak4619vn-en-datasheet.pdf
- *
- * Usage:
- * For each device instantiate a ak4619_Device_t object and fill in if you are
- * using I2C or SPI for communication, the STM HAL handler for the port,
- * as well as the state of the A0 pin for I2C, or the port and pin of
- * the NCS pin if you are using SPI.
- * Then call the AK4619_Init function (For I2C not strictly necessary
- * but recommended. Now you are ready to go. There are function that directly
- * access the adjustable parameters for ease of use, but there are also
- * functions that access the raw registers, as explained in the data sheet.
+ * Datasheet: https://www.akm.com/content/dam/documents/products/audio/audio-codec/ak4619vn/ak4619vn-en-datasheet.pdf
  * @endverbatim
  ******************************************************************************
  */
