@@ -238,6 +238,8 @@ uint8_t AK4619_WriteSPI(ak4619_Device_t *device, uint8_t registerAddress, uint8_
 uint8_t AK4619_ReadSPI(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
 uint8_t AK4619_WriteI2C(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
 uint8_t AK4619_ReadI2C(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
+uint8_t AK4619_Write(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
+uint8_t AK4619_Read(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
 
 uint8_t AK4619_Init(ak4619_Device_t *device);
 

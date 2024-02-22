@@ -22,6 +22,7 @@
 
 uint8_t AK4619_ActivateSPIComunication(ak4619_Device_t *device) {
 	/* Holds data for SPI transmission */
+	// TODO: give this discriptive names
 	uint8_t spiData[4] = {0xDE, 0xAD, 0xDA, 0x7A};
 	/* Holds hal status for error catching. */
 	uint8_t status = 0;
@@ -51,6 +52,7 @@ uint8_t AK4619_ActivateSPIComunication(ak4619_Device_t *device) {
 
 uint8_t AK4619_WriteSPI(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data) {
 	/* Holds data for SPI transmission */
+	// TODO: give this discriptive names
 	uint8_t spiData[4] = {0xC3, 0x00, registerAddress, *data};
 	/* Holds hal status for error catching. */
 	uint8_t status = 0;
@@ -157,366 +159,174 @@ uint8_t AK4619_ReadI2C(ak4619_Device_t *device, uint8_t registerAddress, uint8_t
 	return status;
 }
 
-uint8_t AK4619_Init(ak4619_Device_t *device) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ActivateSPIComunication(device); //TODO: Error catching for pin, com handler and port
-	} else if(device->mcuInterface != ak4619_I2C) {
+uint8_t AK4619_Write(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data) {
+	if (device->mcuInterface == ak4619_SPI) {
+		return AK4619_WriteSPI(device, registerAddress, data);
+	} else if (device->mcuInterface == ak4619_I2C) {
+		return AK4619_WriteI2C(device, registerAddress, data);
+	} else {
 		return EXIT_FAILURE;
 	}
-	return status;
+}
+
+uint8_t AK4619_Read(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data) {
+	if (device->mcuInterface == ak4619_SPI) {
+		return AK4619_ReadSPI(device, registerAddress, data);
+	} else if (device->mcuInterface == ak4619_I2C) {
+		return AK4619_ReadI2C(device, registerAddress, data);
+	} else {
+		return EXIT_FAILURE;
+	}
+}
+
+uint8_t AK4619_Init(ak4619_Device_t *device) {
+	if(device->mcuInterface == ak4619_SPI) {
+		return AK4619_ActivateSPIComunication(device); //TODO: Error catching for pin, com handler and port
+	} 
+	if(device->mcuInterface != ak4619_I2C) {
+		return EXIT_FAILURE;
+	}
+	return 0;
 }
 
 uint8_t AK4619_SetRegister_PowerManagementReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_POWER_MANAGEMENT, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_POWER_MANAGEMENT, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Write(device, AK4619_REG_POWER_MANAGEMENT, registerValue);
 }
 
 uint8_t AK4619_GetRegister_PowerManagementReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_POWER_MANAGEMENT, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_POWER_MANAGEMENT, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Read(device, AK4619_REG_POWER_MANAGEMENT, registerValue);
 }
 
 uint8_t AK4619_SetRegister_AudioInterfaceFormatReg(ak4619_Device_t *device, uint8_t registerValue[2]) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_A, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteSPI(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, ++registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_A, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteI2C(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, ++registerValue);
-	} else {
-		return EXIT_FAILURE;
+	if (!AK4619_Write(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_A, registerValue)) {
+		return AK4619_Write(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, registerValue++);
 	}
-	return status;
+	return EXIT_FAILURE;
 }
 
 uint8_t AK4619_GetRegister_AudioInterfaceFormatReg(ak4619_Device_t *device, uint8_t registerValue[2]) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_A, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadSPI(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, ++registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_A, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadI2C(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, ++registerValue);
-	} else {
-		return EXIT_FAILURE;
+	if (!AK4619_Read(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_A, registerValue)) {
+		return AK4619_Read(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, registerValue++);
 	}
-	return status;
+	return EXIT_FAILURE;
 }
 
 uint8_t AK4619_SetRegister_SystemClockReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_SYSTEM_CLOCK_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_SYSTEM_CLOCK_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Write(device, AK4619_REG_SYSTEM_CLOCK_SETTING, registerValue);
 }
 
 uint8_t AK4619_GetRegister_SystemClockReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_SYSTEM_CLOCK_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_SYSTEM_CLOCK_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Read(device, AK4619_REG_SYSTEM_CLOCK_SETTING, registerValue);
 }
 
 uint8_t AK4619_SetRegister_MicAmpReg(ak4619_Device_t *device, uint8_t registerValue[2]) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_MIC_AMP_GAIN_A, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteSPI(device, AK4619_REG_MIC_AMP_GAIN_B, ++registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_MIC_AMP_GAIN_A, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteI2C(device, AK4619_REG_MIC_AMP_GAIN_B, ++registerValue);
-	} else {
-		return EXIT_FAILURE;
+	if (!AK4619_Write(device, AK4619_REG_MIC_AMP_GAIN_A, registerValue)) {
+		return AK4619_Write(device, AK4619_REG_MIC_AMP_GAIN_B, registerValue++);
 	}
-	return status;
+	return EXIT_FAILURE;
 }
 
 uint8_t AK4619_GetRegister_MicAmpReg(ak4619_Device_t *device, uint8_t registerValue[2]) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_MIC_AMP_GAIN_A, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadSPI(device, AK4619_REG_MIC_AMP_GAIN_B, ++registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_MIC_AMP_GAIN_A, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadI2C(device, AK4619_REG_MIC_AMP_GAIN_B, ++registerValue);
-	} else {
-		return EXIT_FAILURE;
+	if (!AK4619_Read(device, AK4619_REG_MIC_AMP_GAIN_A, registerValue)) {
+		return AK4619_Read(device, AK4619_REG_MIC_AMP_GAIN_B, registerValue++);
 	}
-	return status;
+	return EXIT_FAILURE;
 }
 
 uint8_t AK4619_SetRegister_ADCDigitalVolumeReg(ak4619_Device_t *device, uint8_t registerValue[4]) {
 	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_ADC1_L_DIGITAL_VOLUME, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteSPI(device, AK4619_REG_ADC1_R_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteSPI(device, AK4619_REG_ADC2_L_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteSPI(device, AK4619_REG_ADC2_R_DIGITAL_VOLUME, ++registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_ADC1_L_DIGITAL_VOLUME, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteI2C(device, AK4619_REG_ADC1_R_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteI2C(device, AK4619_REG_ADC2_L_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteI2C(device, AK4619_REG_ADC2_R_DIGITAL_VOLUME, ++registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
+	status = AK4619_Write(device, AK4619_REG_ADC1_L_DIGITAL_VOLUME, registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Write(device, AK4619_REG_ADC1_R_DIGITAL_VOLUME, ++registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Write(device, AK4619_REG_ADC2_L_DIGITAL_VOLUME, ++registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Write(device, AK4619_REG_ADC2_R_DIGITAL_VOLUME, ++registerValue);
 	return status;
 }
 
 uint8_t AK4619_GetRegister_ADCDigitalVolumeReg(ak4619_Device_t *device, uint8_t registerValue[4]){
 	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_ADC1_L_DIGITAL_VOLUME, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadSPI(device, AK4619_REG_ADC1_R_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadSPI(device, AK4619_REG_ADC2_L_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadSPI(device, AK4619_REG_ADC2_R_DIGITAL_VOLUME, ++registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_ADC1_L_DIGITAL_VOLUME, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadI2C(device, AK4619_REG_ADC1_R_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadI2C(device, AK4619_REG_ADC2_L_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadI2C(device, AK4619_REG_ADC2_R_DIGITAL_VOLUME, ++registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
+	status = AK4619_Read(device, AK4619_REG_ADC1_L_DIGITAL_VOLUME, registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Read(device, AK4619_REG_ADC1_R_DIGITAL_VOLUME, ++registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Read(device, AK4619_REG_ADC2_L_DIGITAL_VOLUME, ++registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Read(device, AK4619_REG_ADC2_R_DIGITAL_VOLUME, ++registerValue);
 	return status;
 }
 
 uint8_t AK4619_SetRegister_ADCDigitalFilterReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_ADC_DIGITAL_FILTER_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_ADC_DIGITAL_FILTER_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Write(device, AK4619_REG_ADC_DIGITAL_FILTER_SETTING, registerValue);
 }
 
 uint8_t AK4619_GetRegister_ADCDigitalFilterReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_ADC_DIGITAL_FILTER_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_ADC_DIGITAL_FILTER_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Read(device, AK4619_REG_ADC_DIGITAL_FILTER_SETTING, registerValue);
 }
 
 uint8_t AK4619_SetRegister_ADCAnalogInputReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_ADC_ANALOG_INPUT_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_ADC_ANALOG_INPUT_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Write(device, AK4619_REG_ADC_ANALOG_INPUT_SETTING, registerValue);
 }
 
 uint8_t AK4619_GetRegister_ADCAnalogInputReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_ADC_ANALOG_INPUT_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_ADC_ANALOG_INPUT_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Read(device, AK4619_REG_ADC_ANALOG_INPUT_SETTING, registerValue);
 }
 
 uint8_t AK4619_SetRegister_ADCMuteAndHPFControlReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_ADC_MUTE_AND_HPF_CONTROL, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_ADC_MUTE_AND_HPF_CONTROL, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Write(device, AK4619_REG_ADC_MUTE_AND_HPF_CONTROL, registerValue);
 }
 
 uint8_t AK4619_GetRegister_ADCMuteAndHPFControlReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_ADC_MUTE_AND_HPF_CONTROL, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_ADC_MUTE_AND_HPF_CONTROL, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+		return AK4619_Read(device, AK4619_REG_ADC_MUTE_AND_HPF_CONTROL, registerValue);
 }
 
 uint8_t AK4619_SetRegister_DACDigitalVolumeReg(ak4619_Device_t *device, uint8_t registerValue[4]) {
 	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_DAC1_L_DIGITAL_VOLUME, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteSPI(device, AK4619_REG_DAC1_R_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteSPI(device, AK4619_REG_DAC2_L_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteSPI(device, AK4619_REG_DAC2_R_DIGITAL_VOLUME, ++registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_DAC1_L_DIGITAL_VOLUME, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteI2C(device, AK4619_REG_DAC1_R_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteI2C(device, AK4619_REG_DAC2_L_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_WriteI2C(device, AK4619_REG_DAC2_R_DIGITAL_VOLUME, ++registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
+	status = AK4619_Write(device, AK4619_REG_DAC1_L_DIGITAL_VOLUME, registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Write(device, AK4619_REG_DAC1_R_DIGITAL_VOLUME, ++registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Write(device, AK4619_REG_DAC2_L_DIGITAL_VOLUME, ++registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Write(device, AK4619_REG_DAC2_R_DIGITAL_VOLUME, ++registerValue);
 	return status;
 }
 
 uint8_t AK4619_GetRegister_DACDigitalVolumeReg(ak4619_Device_t *device, uint8_t registerValue[4]) {
 	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_DAC1_L_DIGITAL_VOLUME, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadSPI(device, AK4619_REG_DAC1_R_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadSPI(device, AK4619_REG_DAC2_L_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadSPI(device, AK4619_REG_DAC2_R_DIGITAL_VOLUME, ++registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_DAC1_L_DIGITAL_VOLUME, registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadI2C(device, AK4619_REG_DAC1_R_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadI2C(device, AK4619_REG_DAC2_L_DIGITAL_VOLUME, ++registerValue);
-		if(status) return EXIT_FAILURE;
-		status = AK4619_ReadI2C(device, AK4619_REG_DAC2_R_DIGITAL_VOLUME, ++registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
+	status = AK4619_Read(device, AK4619_REG_DAC1_L_DIGITAL_VOLUME, registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Read(device, AK4619_REG_DAC1_R_DIGITAL_VOLUME, ++registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Read(device, AK4619_REG_DAC2_L_DIGITAL_VOLUME, ++registerValue);
+	if(status) return EXIT_FAILURE;
+	status = AK4619_Read(device, AK4619_REG_DAC2_R_DIGITAL_VOLUME, ++registerValue);
 	return status;
 }
 
 uint8_t AK4619_SetRegister_DACInputSettingsReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_DAC_INPUT_SELECT_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_DAC_INPUT_SELECT_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Write(device, AK4619_REG_DAC_INPUT_SELECT_SETTING, registerValue);
 }
 
 uint8_t AK4619_GetRegister_DACInputSettingsReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_DAC_INPUT_SELECT_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_DAC_INPUT_SELECT_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Read(device, AK4619_REG_DAC_INPUT_SELECT_SETTING, registerValue);
 }
 
 uint8_t AK4619_SetRegister_DACDeemphasisReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_DAC_DEEMPHASIS_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_DAC_DEEMPHASIS_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+		return AK4619_Write(device, AK4619_REG_DAC_DEEMPHASIS_SETTING, registerValue);
 }
 
 uint8_t AK4619_GetRegister_DACDeemphasisReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_DAC_DEEMPHASIS_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_DAC_DEEMPHASIS_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Read(device, AK4619_REG_DAC_DEEMPHASIS_SETTING, registerValue);
 }
 
 uint8_t AK4619_SetRegister_DACMuteAndFilterSettingsReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_WriteSPI(device, AK4619_REG_DAC_MUTE_AND_FILTER_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_WriteI2C(device, AK4619_REG_DAC_MUTE_AND_FILTER_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Write(device, AK4619_REG_DAC_MUTE_AND_FILTER_SETTING, registerValue);
 }
 
 uint8_t AK4619_GetRegister_DACMuteAndFilterSettingsReg(ak4619_Device_t *device, uint8_t *registerValue) {
-	uint8_t status = 0;
-	if(device->mcuInterface == ak4619_SPI) {
-		status = AK4619_ReadSPI(device, AK4619_REG_DAC_MUTE_AND_FILTER_SETTING, registerValue);
-	} else if(device->mcuInterface == ak4619_I2C) {
-		status = AK4619_ReadI2C(device, AK4619_REG_DAC_MUTE_AND_FILTER_SETTING, registerValue);
-	} else {
-		return EXIT_FAILURE;
-	}
-	return status;
+	return AK4619_Read(device, AK4619_REG_DAC_MUTE_AND_FILTER_SETTING, registerValue);
 }
 
 /******************************Individual Settings******************************/
