@@ -1,0 +1,120 @@
+/**
+ ******************************************************************************
+ * @file    AK4619.h
+ * @version 1.0
+ * @author  Till Heuer
+ * @brief   Headerfile for driver for AKM AK4619 4 channel audio codec.
+ * @date 	Feb 20, 2024
+ * @verbatim
+ * Datasheet: https://www.akm.com/content/dam/documents/products/audio/audio-codec/ak4619vn/ak4619vn-en-datasheet.pdf
+ * @endverbatim
+ ******************************************************************************
+ */
+
+#ifdef __cplusplus
+	extern "C" {
+#endif
+
+/** @addtogroup IC_Drivers
+ * @{
+ */
+
+/** @addtogroup Audio_Codec
+ * @{
+ */
+
+#ifndef IC_DRIVERS_INC_AK4619_H_
+#define IC_DRIVERS_INC_AK4619_H_
+
+#include <stdint.h>
+#include <stm32f0xx_hal.h>
+
+/**
+ * Defines for register addresses.
+ */
+
+#define AK4619_REG_POWER_MANAGEMENT 			0x00
+#define AK4619_REG_AUDIO_INTERFACE_FORMAT_A 	0x01
+#define AK4619_REG_AUDIO_INTERFACE_FORMAT_B 	0x02
+#define AK4619_REG_SYSTEM_CLOCK_SETTING 		0x03
+#define AK4619_REG_MIC_AMP_GAIN_A				0x04
+#define AK4619_REG_MIC_AMP_GAIN_B				0x05
+#define AK4619_REG_ADC1_L_DIGITAL_VOLUME	 	0x06
+#define AK4619_REG_ADC1_R_DIGITAL_VOLUME	 	0x07
+#define AK4619_REG_ADC2_L_DIGITAL_VOLUME	 	0x08
+#define AK4619_REG_ADC2_R_DIGITAL_VOLUME	 	0x09
+#define AK4619_REG_ADC_DIGITAL_FILTER_SETTING  	0x0A
+#define AK4619_REG_ADC_ANALOG_INPUT_SETTING		0x0B
+#define AK4619_REG_ADC_MUTE_AND_HPF_CONTROL 	0x0D
+#define AK4619_REG_DAC1_L_DIGITAL_VOLUME	 	0x0E
+#define AK4619_REG_DAC1_R_DIGITAL_VOLUME	 	0x0F
+#define AK4619_REG_DAC2_L_DIGITAL_VOLUME	 	0x10
+#define AK4619_REG_DAC2_R_DIGITAL_VOLUME	 	0x11
+#define AK4619_REG_DAC_INPUT_SELECT_SETTING 	0x12
+#define AK4619_REG_DAC_DEEMPHASIS_SETTING 		0x13
+#define AK4619_REG_DAC_MUTE_AND_FILTER_SETTING 	0x14
+
+typedef enum {
+	ak4619_I2C,
+	ak4619_SPI
+}ak4619_MCUInterface_t;
+
+typedef enum {
+	ak4619_A0_GND,
+	ak4619_A0_Vdd
+}ak4619_A0_t;
+
+typedef enum {
+	ak4619_ResetState,
+	ak4619_Enabled
+}ak4619_ResetMode_t;
+
+typedef enum {
+	ak4619_PowerDownState,
+	ak4619_NormalOperation
+}ak4619_PowerMode_t;
+
+typedef enum {
+	ak4619_StereoMode,
+	ak4619_TDMMode
+}ak4619_TDMMode_t;
+
+typedef enum {
+	ak4619_Stereo_I2SMode,
+	ak4619_Stereo_MSBJustifiedMode,
+	ak4619_Stereo_PCMShortFrameMode,
+	ak4619_Stereo_PCMLongFrameMode,
+	ak4619_TDM128_I2S,
+
+}ak4619_AudioInterfaceFormat_t;
+
+typedef struct {
+	ak4619_MCUInterface_t mcuInterface;
+	I2C_HandleTypeDef *hi2c;
+	SPI_HandleTypeDef *hspi;
+	ak4619_A0_t a0;
+	uint16_t NCSPin;
+}ak4619_Device_t;
+
+typedef struct {
+
+}ak4619_PowerState;
+
+uint8_t AK4619_Init(ak4619_Device_t *device);
+
+uint8_t AK4619_SetPowerSettings(ak4619_Device_t *device);
+uint8_t AK4619_GetPowerSettings(ak4619_Device_t *device);
+
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */
+
+#ifdef __cplusplus
+	}
+#endif
+
+#endif /* IC_DRIVERS_INC_AK4619_H_ */

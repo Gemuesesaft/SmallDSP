@@ -6,8 +6,8 @@
 
   (title_block
     (title "SmallDSP Maxi")
-    (date "2024-01-06")
-    (rev "1.0")
+    (date "2024-02-19")
+    (rev "1.1")
     (company "Till Heuer")
   )
 
@@ -736,12 +736,12 @@
   )
 
   (symbol (lib_id "power:GND") (at 138.43 113.03 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 2dd5f106-d3b1-44d1-a2f0-33c95dcdee74)
     (property "Reference" "#PWR0122" (at 138.43 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 138.43 118.11 0)
+    (property "Value" "GND" (at 138.43 116.84 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 138.43 113.03 0)

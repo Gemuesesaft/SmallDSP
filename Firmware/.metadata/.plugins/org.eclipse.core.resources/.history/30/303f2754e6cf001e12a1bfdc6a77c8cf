@@ -1,0 +1,13 @@
+/*
+ * AK4619.h
+ *
+ *  Created on: Feb 20, 2024
+ *      Author: till
+ */
+
+#ifndef IC_DRIVERS_INC_AK4619_H_
+#define IC_DRIVERS_INC_AK4619_H_
+
+
+
+#endif /* IC_DRIVERS_INC_AK4619_H_ */

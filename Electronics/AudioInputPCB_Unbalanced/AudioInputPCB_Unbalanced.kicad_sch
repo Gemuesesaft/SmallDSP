@@ -6,8 +6,8 @@
 
   (title_block
     (title "Unbalanced Analog Input Board for SmallDSP")
-    (date "2024-01-06")
-    (rev "1.0")
+    (date "2024-01-30")
+    (rev "1.1")
     (company "Till Heuer")
   )
 
