@@ -1,0 +1,25 @@
+/**
+ ******************************************************************************
+ * @file    Codecs.c
+ * @version 1.0
+ * @author  Till Heuer
+ * @brief   Codec module.
+ * @date 	Feb 27, 2024
+ ******************************************************************************
+ */
+
+/** @addtogroup Core
+ * @{
+ */
+
+#include <Codecs.h>
+
+ak4619_device_t
+
+uint8_t InitialiseCodecs(void) {
+
+}
+
+/**
+ * @}
+ */

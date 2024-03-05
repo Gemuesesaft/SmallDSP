@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <Codecs.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -89,6 +89,8 @@ void Error_Handler(void);
 #define NCS_Codec3_GPIO_Port GPIOA
 #define NCS_Codec4_Pin GPIO_PIN_11
 #define NCS_Codec4_GPIO_Port GPIOA
+#define ErrorFlag_Pin GPIO_PIN_12
+#define ErrorFlag_GPIO_Port GPIOA
 #define EN_Codecs_1to4_Pin GPIO_PIN_6
 #define EN_Codecs_1to4_GPIO_Port GPIOF
 #define EN_Codecs_5to8_Pin GPIO_PIN_7

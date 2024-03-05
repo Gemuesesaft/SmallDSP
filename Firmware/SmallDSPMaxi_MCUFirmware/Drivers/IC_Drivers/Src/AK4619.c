@@ -19,6 +19,15 @@
 #include <AK4619.h>
 
 /*******************************Register Settings*******************************/
+uint8_t ReadBits(uint8_t target, uint8_t bitNum, uint8_t bitPos) {
+	uint8_t mask = ((uint8_t)pow(2, bitNum) - 1) << bitPos;
+	return (target & mask) >> bitPos;
+}
+
+uint8_t ReplaceBits(uint8_t target, uint8_t bitNum, uint8_t bitPos, uint8_t newValue) {
+	uint8_t mask = ((uint8_t)pow(2, bitNum) - 1) << bitPos;
+	return (target & ~mask) | (newValue << bitPos);
+}
 
 uint8_t AK4619_ActivateSPIComunication(ak4619_Device_t *device) {
 	/* Holds data for SPI transmission */
@@ -52,7 +61,7 @@ uint8_t AK4619_ActivateSPIComunication(ak4619_Device_t *device) {
 
 uint8_t AK4619_WriteSPI(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data) {
 	/* Holds data for SPI transmission */
-	// TODO: give this discriptive names
+	// TODO: give this discriptive names (SPI_WRITE_COMMAND)
 	uint8_t spiData[4] = {0xC3, 0x00, registerAddress, *data};
 	/* Holds hal status for error catching. */
 	uint8_t status = 0;
@@ -82,7 +91,8 @@ uint8_t AK4619_WriteSPI(ak4619_Device_t *device, uint8_t registerAddress, uint8_
 
 uint8_t AK4619_ReadSPI(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data) {
 	/* Holds data for SPI transmission */
-	uint8_t spiData[3] = {0x43, 0x00, registerAddress};
+	// TODO: give this discriptive names (SPI_READ_COMMAND)
+	uint8_t spiData[4] = {0x43, 0x00, registerAddress, 0x00};
 	/* Holds hal status for error catching. */
 	uint8_t status = 0;
 	/* Checks for input errors. */
@@ -186,7 +196,7 @@ uint8_t AK4619_Init(ak4619_Device_t *device) {
 	if(device->mcuInterface != ak4619_I2C) {
 		return EXIT_FAILURE;
 	}
-	return 0;
+	return EXIT_SUCCESS;
 }
 
 uint8_t AK4619_SetRegister_PowerManagementReg(ak4619_Device_t *device, uint8_t *registerValue) {
@@ -199,14 +209,14 @@ uint8_t AK4619_GetRegister_PowerManagementReg(ak4619_Device_t *device, uint8_t *
 
 uint8_t AK4619_SetRegister_AudioInterfaceFormatReg(ak4619_Device_t *device, uint8_t registerValue[2]) {
 	if (!AK4619_Write(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_A, registerValue)) {
-		return AK4619_Write(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, registerValue++);
+		return AK4619_Write(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, ++registerValue);
 	}
 	return EXIT_FAILURE;
 }
 
 uint8_t AK4619_GetRegister_AudioInterfaceFormatReg(ak4619_Device_t *device, uint8_t registerValue[2]) {
 	if (!AK4619_Read(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_A, registerValue)) {
-		return AK4619_Read(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, registerValue++);
+		return AK4619_Read(device, AK4619_REG_AUDIO_INTERFACE_FORMAT_B, ++registerValue);
 	}
 	return EXIT_FAILURE;
 }
@@ -221,14 +231,14 @@ uint8_t AK4619_GetRegister_SystemClockReg(ak4619_Device_t *device, uint8_t *regi
 
 uint8_t AK4619_SetRegister_MicAmpReg(ak4619_Device_t *device, uint8_t registerValue[2]) {
 	if (!AK4619_Write(device, AK4619_REG_MIC_AMP_GAIN_A, registerValue)) {
-		return AK4619_Write(device, AK4619_REG_MIC_AMP_GAIN_B, registerValue++);
+		return AK4619_Write(device, AK4619_REG_MIC_AMP_GAIN_B, ++registerValue);
 	}
 	return EXIT_FAILURE;
 }
 
 uint8_t AK4619_GetRegister_MicAmpReg(ak4619_Device_t *device, uint8_t registerValue[2]) {
 	if (!AK4619_Read(device, AK4619_REG_MIC_AMP_GAIN_A, registerValue)) {
-		return AK4619_Read(device, AK4619_REG_MIC_AMP_GAIN_B, registerValue++);
+		return AK4619_Read(device, AK4619_REG_MIC_AMP_GAIN_B, ++registerValue);
 	}
 	return EXIT_FAILURE;
 }
@@ -314,7 +324,7 @@ uint8_t AK4619_GetRegister_DACInputSettingsReg(ak4619_Device_t *device, uint8_t 
 }
 
 uint8_t AK4619_SetRegister_DACDeemphasisReg(ak4619_Device_t *device, uint8_t *registerValue) {
-		return AK4619_Write(device, AK4619_REG_DAC_DEEMPHASIS_SETTING, registerValue);
+	return AK4619_Write(device, AK4619_REG_DAC_DEEMPHASIS_SETTING, registerValue);
 }
 
 uint8_t AK4619_GetRegister_DACDeemphasisReg(ak4619_Device_t *device, uint8_t *registerValue) {
@@ -345,9 +355,9 @@ uint8_t AK4619_SetPowerSetting(ak4619_Device_t *device, ak4619_Converter_t conve
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
 	if(converter <= ak4619_ADC2) {
-		registerValue = (registerValue & (~(0b1 << (4 + converter)))) | (powerMode << (4 + converter));
+		registerValue = ReplaceBits(registerValue, 1, 4 + converter, powerMode);
 	} else {
-		registerValue = (registerValue & (~(0b1 << (converter - 1)))) | (powerMode << (converter - 1));
+		registerValue = ReplaceBits(registerValue, 1, converter - 1, powerMode);
 	}
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, &registerValue);
@@ -367,9 +377,9 @@ uint8_t AK4619_GetPowerSetting(ak4619_Device_t *device, ak4619_Converter_t conve
 	status = AK4619_GetRegister_PowerManagementReg(device, &registerValue);
 	/* Combines current value of register with value that has to be changed. */
 	if(converter <= ak4619_ADC2) {
-		*powerMode = (registerValue & (0b1 << (4 + converter))) >> (4 + converter);
+		*powerMode = ReadBits(registerValue, 1, 4 + converter);
 	} else {
-		*powerMode = (registerValue & (0b1 << (converter - 1))) >> (converter - 1);
+		*powerMode = ReadBits(registerValue, 1, converter - 1);
 	}
 	return status;
 }
@@ -387,7 +397,7 @@ uint8_t AK4619_SetResetMode(ak4619_Device_t *device, ak4619_ResetMode_t resetMod
 	status = AK4619_GetRegister_PowerManagementReg(device, &registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue = (registerValue & ~(0b1)) | resetMode;
+	registerValue = ReplaceBits(registerValue, 1, 0, resetMode);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, &registerValue);
 	return status;
@@ -401,7 +411,7 @@ uint8_t AK4619_GetResetMode(ak4619_Device_t *device, ak4619_ResetMode_t *resetMo
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, &registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*resetMode = registerValue & 0b1;
+	*resetMode = ReadBits(registerValue, 1, 0);
 	return status;
 }
 
@@ -418,7 +428,7 @@ uint8_t AK4619_SetTDMMode(ak4619_Device_t *device, ak4619_TDMMode_t tdmMode) {
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[0] = (registerValue[0] & ~(0b1 << 7)) | (tdmMode << 7);
+	registerValue[0] = ReplaceBits(registerValue[0], 1, 7, tdmMode);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -432,7 +442,7 @@ uint8_t AK4619_GetTDMMode(ak4619_Device_t *device, ak4619_TDMMode_t *tdmMode) {
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*tdmMode = (registerValue[0] & (0b1 << 7)) >> 7;
+	*tdmMode = ReadBits(registerValue[0], 1, 7);
 	return status;
 }
 
@@ -449,7 +459,7 @@ uint8_t AK4619_SetAudioInterfaceFormat(ak4619_Device_t *device, ak4619_AudioInte
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[0] = (registerValue[0] & ~(0b111 << 4)) | (ifFormat << 4);
+	registerValue[0] = ReplaceBits(registerValue[0], 3, 4, ifFormat);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -463,7 +473,7 @@ uint8_t AK4619_GetAudioInterfaceFormat(ak4619_Device_t *device, ak4619_AudioInte
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*ifFormat = (registerValue[0] & (0b111 << 4)) >> 4;
+	*ifFormat = ReadBits(registerValue[0], 3, 4);
 	return status;
 }
 
@@ -480,7 +490,7 @@ uint8_t AK4619_SetSlotLength(ak4619_Device_t *device, ak4619_WordLength_t slotLe
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[0] = (registerValue[0] & ~(0b11 << 2)) | (slotLength << 2);
+	registerValue[0] = ReplaceBits(registerValue[0], 2, 2, slotLength);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -494,7 +504,7 @@ uint8_t AK4619_GetSlotLength(ak4619_Device_t *device, ak4619_WordLength_t *slotL
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*slotLength = (registerValue[0] & (0b11 << 2)) >> 2;
+	*slotLength = ReadBits(registerValue[0], 2, 2);
 	return status;
 }
 
@@ -511,7 +521,7 @@ uint8_t AK4619_SetBCLKEdge(ak4619_Device_t *device, ak4619_BCLKEdge_t bclkEdge) 
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[0] = (registerValue[0] & ~(0b1 << 1)) | (bclkEdge << 1);
+	registerValue[0] = ReplaceBits(registerValue[0], 1, 1, bclkEdge);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -525,7 +535,7 @@ uint8_t AK4619_GetBCLKEdge(ak4619_Device_t *device, ak4619_BCLKEdge_t *bclkEdge)
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*bclkEdge = (registerValue[0] & (0b1 << 1)) >> 1;
+	*bclkEdge = ReadBits(registerValue[0], 1, 1);
 	return status;
 }
 
@@ -542,7 +552,7 @@ uint8_t AK4619_SetFastModeSetting(ak4619_Device_t *device, ak4619_SDOUTFastMode_
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[0] = (registerValue[0] & ~0b1) | fastMode;
+	registerValue[0] = ReplaceBits(registerValue[0], 1, 0, fastMode);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -556,7 +566,7 @@ uint8_t AK4619_GetFastModeSetting(ak4619_Device_t *device, ak4619_SDOUTFastMode_
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*fastMode = registerValue[0] & 0b1;
+	*fastMode = ReadBits(registerValue[0], 1, 0);
 	return status;
 }
 
@@ -573,7 +583,7 @@ uint8_t AK4619_SetSlotStart(ak4619_Device_t *device, ak4619_SlotStartPosition_t 
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[1] = (registerValue[1] & ~(0b1 << 4)) | (slotStart << 4);
+	registerValue[1] = ReplaceBits(registerValue[1], 1, 4, slotStart);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -587,7 +597,7 @@ uint8_t AK4619_GetSlotStart(ak4619_Device_t *device, ak4619_SlotStartPosition_t 
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*slotStart = (registerValue[1] & (0b1 << 4)) >> 4;
+	*slotStart = ReadBits(registerValue[1], 1, 4);
 	return status;
 }
 
@@ -604,7 +614,7 @@ uint8_t AK4619_SetADCWordLength(ak4619_Device_t *device, ak4619_WordLength_t wor
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[1] = (registerValue[1] & ~(0b11 << 2)) | (wordLength << 2);
+	registerValue[1] = ReplaceBits(registerValue[1], 2, 2, wordLength);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -618,7 +628,7 @@ uint8_t AK4619_GetADCWordLength(ak4619_Device_t *device, ak4619_WordLength_t *wo
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*wordLength = (registerValue[1] & (0b11 << 2)) >> 2;
+	*wordLength = ReadBits(registerValue[1], 2, 2);
 	return status;
 }
 
@@ -635,7 +645,7 @@ uint8_t AK4619_SetDACWordLength(ak4619_Device_t *device, ak4619_WordLength_t wor
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[1] = (registerValue[1] & ~0b11) | wordLength;
+	registerValue[1] = ReplaceBits(registerValue[1], 2, 0, wordLength);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -649,7 +659,7 @@ uint8_t AK4619_GetDACWordLength(ak4619_Device_t *device, ak4619_WordLength_t *wo
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*wordLength = registerValue[1] & 0b11;
+	*wordLength = ReadBits(registerValue[1], 2, 0);
 	return status;
 }
 
@@ -666,7 +676,7 @@ uint8_t AK4619_SetSystemClockSetting(ak4619_Device_t *device, ak4619_SystemClock
 	status = AK4619_GetRegister_AudioInterfaceFormatReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[1] = (registerValue[1] & ~0b111) | sysClock;
+	registerValue[1] = ReplaceBits(registerValue[1], 3, 0, sysClock);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_PowerManagementReg(device, registerValue);
 	return status;
@@ -680,7 +690,7 @@ uint8_t AK4619_GetSystemClockSetting(ak4619_Device_t *device, ak4619_SystemClock
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_PowerManagementReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*sysClock = registerValue[1] & 0b111;
+	*sysClock = ReadBits(registerValue[1], 3, 0);
 	return status;
 }
 
@@ -697,7 +707,7 @@ uint8_t AK4619_SetADCVolumeTransitionTime(ak4619_Device_t *device, ak4619_Digita
 	status = AK4619_GetRegister_ADCMuteAndHPFControlReg(device, &registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue = (registerValue & ~(0b1 << 7)) | (tranTime << 7);
+	registerValue = ReplaceBits(registerValue, 1, 7, tranTime);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_ADCMuteAndHPFControlReg(device, &registerValue);
 	return status;
@@ -711,7 +721,7 @@ uint8_t AK4619_GetADCVolumeTransitionTime(ak4619_Device_t *device, ak4619_Digita
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_ADCMuteAndHPFControlReg(device, &registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*tranTime = (registerValue & (0b1 << 7)) >> 7;
+	*tranTime = ReadBits(registerValue, 1, 7);
 	return status;
 }
 
@@ -728,7 +738,7 @@ uint8_t AK4619_SetDACVolumeTransitionTime(ak4619_Device_t *device, ak4619_Digita
 	status = AK4619_GetRegister_DACMuteAndFilterSettingsReg(device, &registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue = (registerValue & ~(0b1 << 7)) | (tranTime << 7);
+	registerValue = ReplaceBits(registerValue, 1, 7, tranTime);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_DACMuteAndFilterSettingsReg(device, &registerValue);
 	return status;
@@ -742,7 +752,7 @@ uint8_t AK4619_GetDACVolumeTransitionTime(ak4619_Device_t *device, ak4619_Digita
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_DACMuteAndFilterSettingsReg(device, &registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*tranTime = (registerValue & (0b1 << 7)) >> 7;
+	*tranTime = ReadBits(registerValue, 1, 7);
 	return status;
 }
 
@@ -763,7 +773,7 @@ uint8_t AK4619_SetSoftMuteSetting(ak4619_Device_t *device, ak4619_Converter_t co
 	}
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue = (registerValue & ~(0b1 << ((converter % 2) + 4))) | (softMute << ((converter % 2) + 4));
+	registerValue = ReplaceBits(registerValue, 1, (converter % 2) + 4, softMute);
 	/* Sends changed register settings to chip. */
 	if(converter <= ak4619_ADC2) {
 		status = AK4619_SetRegister_ADCMuteAndHPFControlReg(device, &registerValue);
@@ -788,7 +798,7 @@ uint8_t AK4619_GetSoftMuteSetting(ak4619_Device_t *device, ak4619_Converter_t co
 		status = AK4619_GetRegister_DACMuteAndFilterSettingsReg(device, &registerValue);
 	}
 	/* Combines current value of register with value that has to be changed. */
-	*softMute = (registerValue & (0b1 << ((converter % 2) + 4)) >> ((converter % 2) + 4));
+	*softMute = ReadBits(registerValue, 1, (converter % 2) + 4);
 	return status;
 }
 
@@ -805,7 +815,7 @@ uint8_t AK4619_SetADCDCBlockingFilter(ak4619_Device_t *device, ak4619_Converter_
 	status = AK4619_GetRegister_ADCMuteAndHPFControlReg(device, &registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue = (registerValue & ~(0b1 << (converter + 1))) | (hpf << (converter + 1));
+	registerValue = ReplaceBits(registerValue, 1, converter + 1, hpf);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_ADCMuteAndHPFControlReg(device, &registerValue);
 	return status;
@@ -823,7 +833,7 @@ uint8_t AK4619_GetADCDCBlockingFilter(ak4619_Device_t *device, ak4619_Converter_
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_ADCMuteAndHPFControlReg(device, &registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*hpf = (registerValue & (0b1 << (converter + 1))) >> (converter + 1);
+	*hpf = ReadBits(registerValue, 1, converter + 1);
 	return status;
 }
 
@@ -840,7 +850,7 @@ uint8_t AK4619_SetDACInputSource(ak4619_Device_t *device, ak4619_Converter_t con
 	status = AK4619_GetRegister_DACInputSettingsReg(device, &registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue = (registerValue & ~(0b11 << (converter * 2))) | (source << (converter * 2));
+	registerValue = ReplaceBits(registerValue, 2, converter * 2, source);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_DACInputSettingsReg(device, &registerValue);
 	return status;
@@ -858,7 +868,7 @@ uint8_t AK4619_GetDACInputSource(ak4619_Device_t *device, ak4619_Converter_t con
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_DACInputSettingsReg(device, &registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*source = (registerValue & (0b11 << (converter * 2))) >> (converter * 2);
+	*source = ReadBits(registerValue, 2, converter * 2);
 	return status;
 }
 
@@ -875,7 +885,7 @@ uint8_t AK4619_SetDACDeemphasisFilter(ak4619_Device_t *device, ak4619_Converter_
 	status = AK4619_GetRegister_DACDeemphasisReg(device, &registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue = (registerValue & ~(0b11 << (converter * 2))) | (deemp << (converter * 2));
+	registerValue = ReplaceBits(registerValue, 2, converter * 2, deemp);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_DACDeemphasisReg(device, &registerValue);
 	return status;
@@ -893,7 +903,7 @@ uint8_t AK4619_GetDACDeemphasisFilter(ak4619_Device_t *device, ak4619_Converter_
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_DACDeemphasisReg(device, &registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*deemp = (registerValue & (0b11 << (converter * 2))) >> (converter * 2);
+	*deemp = ReadBits(registerValue, 2, converter * 2);
 	return status;
 }
 
@@ -910,7 +920,7 @@ uint8_t AK4619_SetMicAmpGain(ak4619_Device_t *device, ak4619_ADC_t adc, ak4619_M
 	status = AK4619_GetRegister_MicAmpReg(device, registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue[adc/2] = (registerValue[adc/2] & ~(0b1111 << ((adc % 2) * 4))) | (micGain << ((adc % 2) * 4));
+	registerValue[adc/2] = ReplaceBits(registerValue[adc/2], 4, (adc % 2) * 4, micGain);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_MicAmpReg(device, registerValue);
 	return status;
@@ -928,7 +938,7 @@ uint8_t AK4619_GetMicAmpGain(ak4619_Device_t *device, ak4619_ADC_t adc, ak4619_M
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_MicAmpReg(device, registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*micGain = (registerValue[adc/2] & (0b1111 << ((adc % 2) * 4))) >> ((adc % 2) * 4);
+	*micGain = ReadBits(registerValue[adc/2], 4, (adc % 2) * 4);
 	return status;
 }
 
@@ -994,7 +1004,7 @@ uint8_t AK4619_SetAntiAliasingFilter(ak4619_Device_t *device, ak4619_Converter_t
 		status = AK4619_GetRegister_ADCDigitalFilterReg(device, &registerValue);
 		if(status) return EXIT_FAILURE;
 		/* Combines current value of register with value that has to be changed. */
-		registerValue = (registerValue & ~(0b111 << (converter * 4))) | (aaFilter << (converter * 4));
+		registerValue = ReplaceBits(registerValue, 3, converter * 4, aaFilter);
 		/* Sends changed register settings to chip. */
 		status = AK4619_SetRegister_ADCDigitalFilterReg(device, &registerValue);
 	} else {
@@ -1002,7 +1012,7 @@ uint8_t AK4619_SetAntiAliasingFilter(ak4619_Device_t *device, ak4619_Converter_t
 		status = AK4619_GetRegister_DACMuteAndFilterSettingsReg(device, &registerValue);
 		if(status) return EXIT_FAILURE;
 		/* Combines current value of register with value that has to be changed. */
-		registerValue = (registerValue & ~(0b11 << ((converter - 2) * 2))) | (aaFilter << ((converter - 2) * 2));
+		registerValue = ReplaceBits(registerValue, 2, (converter - 2) * 2, aaFilter);
 		/* Sends changed register settings to chip. */
 		status = AK4619_SetRegister_DACMuteAndFilterSettingsReg(device, &registerValue);
 	}
@@ -1022,12 +1032,12 @@ uint8_t AK4619_GetAntiAliasingFilter(ak4619_Device_t *device, ak4619_Converter_t
 		/* Reads current setting of register. */
 		status = AK4619_GetRegister_ADCDigitalFilterReg(device, &registerValue);
 		/* Combines current value of register with value that has to be changed. */
-		*aaFilter = (registerValue & (0b111 << (converter * 4))) >> (converter * 4);
+		*aaFilter = ReadBits(registerValue, 3, converter * 4);
 	} else {
 		/* Reads current setting of register. */
 		status = AK4619_GetRegister_DACMuteAndFilterSettingsReg(device, &registerValue);
 		/* Combines current value of register with value that has to be changed. */
-		*aaFilter = (registerValue & (0b11 << ((converter - 2) * 2))) >> ((converter - 2) * 2);
+		*aaFilter = ReadBits(registerValue, 2, (converter - 2) * 2);
 	}
 	return status;
 }
@@ -1045,7 +1055,7 @@ uint8_t AK4619_SetADCInputMode(ak4619_Device_t *device, ak4619_ADC_t adc, ak4619
 	status = AK4619_GetRegister_ADCAnalogInputReg(device, &registerValue);
 	if(status) return EXIT_FAILURE;
 	/* Combines current value of register with value that has to be changed. */
-	registerValue = (registerValue & ~(0b11 << (adc * 2))) | (inputMode << (adc * 2));
+	registerValue = ReplaceBits(registerValue, 2, adc * 2, inputMode);
 	/* Sends changed register settings to chip. */
 	status = AK4619_SetRegister_ADCAnalogInputReg(device, &registerValue);
 	return status;
@@ -1063,7 +1073,7 @@ uint8_t AK4619_GetADCInputMode(ak4619_Device_t *device, ak4619_ADC_t adc, ak4619
 	/* Reads current setting of register. */
 	status = AK4619_GetRegister_ADCAnalogInputReg(device, &registerValue);
 	/* Combines current value of register with value that has to be changed. */
-	*inputMode = (registerValue & (0b11 << (adc * 2))) >> (adc * 2);
+	*inputMode = ReadBits(registerValue, 2, adc * 2);
 	return status;
 }
 

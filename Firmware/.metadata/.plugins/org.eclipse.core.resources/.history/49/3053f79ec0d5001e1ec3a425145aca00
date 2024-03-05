@@ -1,0 +1,27 @@
+/**
+ ******************************************************************************
+ * @file    Codecs.c
+ * @version 1.0
+ * @author  Till Heuer
+ * @brief   Codec module.
+ * @date 	Feb 27, 2024
+ ******************************************************************************
+ */
+
+/** @addtogroup Core
+ * @{
+ */
+
+#include <Codecs.h>
+
+ak4619_Device_t codecs[NUMBER_OF_CODECS];
+
+uint8_t InitialiseCodecs(void) {
+	for(uint8_t i = 0; i < NUMBER_OF_CODECS) {
+		codecs[i].mcuInterface = ak4619_SPI;
+	}
+}
+
+/**
+ * @}
+ */

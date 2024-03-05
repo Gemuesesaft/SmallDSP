@@ -1,0 +1,49 @@
+/**
+ ******************************************************************************
+ * @file    Codecs.c
+ * @version 1.0
+ * @author  Till Heuer
+ * @brief   Codec module.
+ * @date 	Feb 27, 2024
+ ******************************************************************************
+ */
+
+/** @addtogroup Core
+ * @{
+ */
+
+#include <Codecs.h>
+
+extern SPI_HandleTypeDef hspi1;
+
+ak4619_Device_t codecs[NUMBER_OF_CODECS];
+
+uint8_t InitialiseCodecs(void) {
+	codecs[0].NCSPin = NCS_Codec1_Pin;
+	codecs[0].NCSPort = NCS_Codec1_GPIO_Port;
+	codecs[1].NCSPin = NCS_Codec2_Pin;
+	codecs[1].NCSPort = NCS_Codec2_GPIO_Port;
+	codecs[2].NCSPin = NCS_Codec3_Pin;
+	codecs[2].NCSPort = NCS_Codec3_GPIO_Port;
+	codecs[3].NCSPin = NCS_Codec4_Pin;
+	codecs[3].NCSPort = NCS_Codec4_GPIO_Port;
+	codecs[4].NCSPin = NCS_Codec5_Pin;
+	codecs[4].NCSPort = NCS_Codec5_GPIO_Port;
+	codecs[5].NCSPin = NCS_Codec6_Pin;
+	codecs[5].NCSPort = NCS_Codec6_GPIO_Port;
+	codecs[6].NCSPin = NCS_Codec7_Pin;
+	codecs[6].NCSPort = NCS_Codec7_GPIO_Port;
+	codecs[7].NCSPin = NCS_Codec8_Pin;
+	codecs[7].NCSPort = NCS_Codec8_GPIO_Port;
+	for(uint8_t i = 0; i < NUMBER_OF_CODECS; i++) {
+			codecs[i].mcuInterface = ak4619_SPI;
+			codecs[i].hspi = hspi1;
+			AK4619_Init(&codecs[i]);
+		}
+
+	return EXIT_SUCCESS;
+}
+
+/**
+ * @}
+ */

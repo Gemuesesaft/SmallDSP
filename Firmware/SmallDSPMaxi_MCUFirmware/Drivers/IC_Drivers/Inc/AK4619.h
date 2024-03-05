@@ -38,6 +38,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
+#include <math.h>
 #include <stm32f0xx_hal.h>
 
 #define AK4619_COM_MAX_ATTEMPTS 		3
@@ -100,14 +101,14 @@ typedef enum {
 }ak4619_TDMMode_t;
 
 typedef enum {
-	ak4619_Stereo_I2SMode,
-	ak4619_Stereo_MSBJustifiedMode,
-	ak4619_Stereo_PCMShortFrameMode,
-	ak4619_Stereo_PCMLongFrameMode,
-	ak4619_TDM128_I2SMode,
-	ak4619_TDM128_MSBJustifiedMode,
-	ak4619_TDM256_I2SMode,
-	ak4619_TDM256_MSBJustifiedMode
+	ak4619_Stereo_I2SMode = 0b000,
+	ak4619_Stereo_MSBJustifiedMode = 0b101,
+	ak4619_Stereo_PCMShortFrameMode = 0b110,
+	ak4619_Stereo_PCMLongFrameMode = 0b111,
+	ak4619_TDM128_I2SMode = 0b010,
+	ak4619_TDM128_MSBJustifiedMode = 0b111,
+	ak4619_TDM256_I2SMode = 0b010,
+	ak4619_TDM256_MSBJustifiedMode = 0b111
 }ak4619_AudioInterfaceFormat_t;
 
 typedef enum {
@@ -231,13 +232,14 @@ typedef struct {
 			GPIO_TypeDef* NCSPort;
 		};
 	};
+	ak4619_AnalogInputMode_t inputMode;
 }ak4619_Device_t;
 
-uint8_t AK4619_ActivateSPIComunication(ak4619_Device_t *device);
-uint8_t AK4619_WriteSPI(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
-uint8_t AK4619_ReadSPI(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
-uint8_t AK4619_WriteI2C(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
-uint8_t AK4619_ReadI2C(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
+/**
+ * @brief
+ *
+ */
+
 uint8_t AK4619_Write(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
 uint8_t AK4619_Read(ak4619_Device_t *device, uint8_t registerAddress, uint8_t *data);
 
